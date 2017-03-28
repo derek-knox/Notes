@@ -7,7 +7,7 @@
 
 ## Chapter 1 - Using neural nets to recognize handwritten digits
 
-- Neural networks leverage supplied *training examples* against a programmed system that learns (infers rules for pattern recognition) from the examples
+- Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
 - *Σ* - sigma (sum)
 - *Perceptron* - an artificial neuron with x binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value to determine the output.
     - Varying the weights and threshold result in different *decision making models*
