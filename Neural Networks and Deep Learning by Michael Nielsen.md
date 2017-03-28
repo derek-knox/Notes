@@ -7,3 +7,4 @@
 
 ## Chapter 1 - Using neural nets to recognize handwritten digits
 
+- Neural networks leverage supplied *training examples* against a programmed system that learns (infers rules for pattern recognition) from the examples
