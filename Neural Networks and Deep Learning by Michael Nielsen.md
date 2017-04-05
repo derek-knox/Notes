@@ -12,6 +12,7 @@
     - *Σ* - sigma (sum) - lowercase is `σ`
     - *≡* - xi (identity) - both sides are true for all values
     - *∂* - partial derivative
+    - *η* - learning rate
 - artificial neurons
     - *perceptron* - an artificial neuron with x binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value to determine the output.
         - Varying the weights and threshold result in different *decision making models*
