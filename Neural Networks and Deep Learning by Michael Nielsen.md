@@ -16,3 +16,4 @@
         - ```
           output = w⋅x + b > 0 ? 1 : 0
           ```
+        - *bias* - measue of ease for perceptron to fire
