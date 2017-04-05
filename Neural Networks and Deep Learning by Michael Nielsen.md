@@ -24,7 +24,15 @@
             - `z = w⋅x+b`
             - `output = σ(z)≡1/1+e^−z`
 - *activation function* - defines a node's output given a set of input(s) (*linear perceptron* and *sigmoid function* are two examples mentioned above)  
-- *neural network anatomy*
-    1) input layer comprised of input neuron(s)
-    2) hidden layer(s) comprised of neuron(s) supplying the output layer
-    3) output layer comprised of output neuron(s)
+- neural network
+    - anatomy
+        1) input layer comprised of input neuron(s)
+        2) hidden layer(s) comprised of neuron(s) supplying the output layer
+        3) output layer comprised of output neuron(s)
+    - types
+        - feedforward (no loops)
+        - recurrent (looping allowed where select neuron(s) only fire for a limited duration)
+    - *cost function* - quantifies accuracy of the weights and biases of a desired output
+    - *gradient descent* - minimization/optimization algorithm aiding the basics of learning in neural nets
+    - The goal of training a neural net is to find weights and biases which minimize the cost function
+
