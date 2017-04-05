@@ -8,7 +8,7 @@
 ## Chapter 1 - Using neural nets to recognize handwritten digits
 
 - Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
-- symbols
+- common formulaic symbols
     - *Σ* - sigma (sum) - lowercase is `σ`
     - *≡* - xi (identity) - both sides are true for all values
     - *∂* - partial derivative
