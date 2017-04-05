@@ -26,9 +26,9 @@
 - *activation function* - defines a node's output given a set of input(s) (*linear perceptron* and *sigmoid function* are two examples mentioned above)  
 - neural network
     - anatomy
-        1) input layer comprised of input neuron(s)
-        2) hidden layer(s) comprised of neuron(s) supplying the output layer
-        3) output layer comprised of output neuron(s)
+        1. input layer comprised of input neuron(s)
+        2. hidden layer(s) comprised of neuron(s) supplying the output layer
+        3. output layer comprised of output neuron(s)
     - types
         - feedforward (no loops)
         - recurrent (looping allowed where select neuron(s) only fire for a limited duration)
