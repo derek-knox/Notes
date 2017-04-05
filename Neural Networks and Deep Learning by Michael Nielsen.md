@@ -10,7 +10,7 @@
 - Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
 - *Σ* - sigma (sum) - lowercase is `σ`
 - *≡* - xi (identity) - both sides are true for all values
-- Artificial neurons
+- artificial neurons
     - *perceptron* - an artificial neuron with x binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value to determine the output.
         - Varying the weights and threshold result in different *decision making models*
         - Layering sets of perceptrons enables abstract and sophisticated decision making as the outputs of a perceptron may be an input in any number of perceptrons in a subsequent layer
@@ -24,3 +24,7 @@
             - `z = w⋅x+b`
             - `output = σ(z)≡1/1+e^−z`
 - *activation function* - defines a node's output given a set of input(s) (*linear perceptron* and *sigmoid function* are two examples mentioned above)  
+- *neural network anatomy*
+    1. input layer comprised of input neuron(s)
+    2. hidden layer(s) comprised of neuron(s) supplying the output layer
+    3. output layer comprised of output neuron(s)
