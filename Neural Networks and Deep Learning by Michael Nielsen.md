@@ -21,5 +21,5 @@
     - *sigmoid* - 
         - AKA - logistic neuron
         - Formula (`σ` = sigmoid function, `w` = weight vector, `x` = input vector, `b` = bias)
-            - `z = w⋅x+b
-              output = σ(z)≡1/1+e^−z`
+            - ```z = w⋅x+b
+              output = σ(z)≡1/1+e^−z```
