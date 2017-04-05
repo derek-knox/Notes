@@ -13,7 +13,5 @@
     - Varying the weights and threshold result in different *decision making models*
     - Layering sets of perceptrons enables abstract and sophisticated decision making as the outputs of a perceptron may be an input in any number of perceptrons in a subsequent layer
     - Forumla (`w` = weight vector, `x` = input vector, `b` = bias)
-        - ```
-          output = w⋅x + b > 0 ? 1 : 0
-          ```
+        - `output = w⋅x + b > 0 ? 1 : 0`
         - *bias* - measue of ease for perceptron to fire
