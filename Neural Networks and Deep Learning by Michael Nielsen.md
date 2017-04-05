@@ -27,7 +27,7 @@
 - neural network
     - anatomy
         1. input layer comprised of input neuron(s)
-        2. hidden layer(s) comprised of neuron(s) supplying the output layer
+        2. hidden layer(s) comprised of neuron(s) informing the output layer
         3. output layer comprised of output neuron(s)
     - types
         - feedforward (no loops)
