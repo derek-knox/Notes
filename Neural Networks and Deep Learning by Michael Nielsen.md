@@ -12,7 +12,7 @@
 - *Perceptron* - an artificial neuron with x binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value to determine the output.
     - Varying the weights and threshold result in different *decision making models*
     - Layering sets of perceptrons enables abstract and sophisticated decision making as the outputs of a perceptron may be an input in any number of perceptrons in a subsequent layer
-    - Perceptron output calculation (`w` = weight vector, `x` = input vector, `b` = bias)
+    - Forumla (`w` = weight vector, `x` = input vector, `b` = bias)
         - ```
-          output = w⋅x+b>0 ? 1 : 0
+          output = w⋅x + b > 0 ? 1 : 0
           ```
