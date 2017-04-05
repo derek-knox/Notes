@@ -15,3 +15,4 @@
     - Forumla (`w` = weight vector, `x` = input vector, `b` = bias)
         - `output = w⋅x + b > 0 ? 1 : 0`
         - *bias* - measue of ease for perceptron to fire
+    - Can mimic NAND gate and thus a neural network can mimic circuits and achieve computational universality. Better than conventional circuit design however, *learning algorithms* can automatically tune weights and biases of a neural network resulting in a learned and potentially superior design.
