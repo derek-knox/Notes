@@ -38,6 +38,6 @@
         - feedforward (no loops)
         - recurrent (looping allowed where select neuron(s) only fire for a limited duration)
     - *cost function* - quantifies accuracy of the weights and biases of a desired output
-    - *gradient descent* - minimization algorithm aiding learning in neural nets by minimizing the cost function
+    - *gradient descent* - minimization algorithm aiding neural net learning by minimizing the cost function
     - The goal of training a neural net is to find weights and biases which minimize the cost function so that inputs not in the training set provide accurate output
 
