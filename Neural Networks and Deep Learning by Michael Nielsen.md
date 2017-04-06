@@ -45,4 +45,7 @@
             - x,z as vars (floor plane) and y as function result (vertical valley depth)
         - By choosing a random point (function variables) an output results. The algorithm determines another point just slightly offset from the original one and compares the two outputs to learn which result is deeper in the valley (using the update rule `v → v′ = v−η∇C`). This informs the algorithm's direction to continue in to find the deepest point in the valley. This is the "minimization" of gradient descent as we seek the global minimum output.
     - The goal of training a neural net is to find weights and biases which minimize the cost function so that inputs not in the training set provide accurate output
+    - *stochastic gradient descent* - optimized approach of gradient descent to approximate the gradient by sampling random test inputs in mini-batches
+    - *mini-batch* - random sample of inputs from a training set
+    - *training epoch* - time to complete a training
 
