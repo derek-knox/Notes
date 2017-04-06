@@ -16,6 +16,7 @@
     - *η* - learning rate
     - *Δ* - delta
     - *∇* - gradient (∇C as gradient vector)
+    - *ϵ* - epsilon (small quantity)
 - artificial neurons
     - *perceptron* - an artificial neuron with n binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value determining the output.
         - Varying the weights and threshold result in different *decision making models*
