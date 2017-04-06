@@ -40,5 +40,6 @@
     - *cost function* - quantifies accuracy of the weights and biases of a desired output
     - *gradient descent* - minimization algorithm aiding neural net learning by minimizing the cost function
         - ball in valley analogy for cost function of two variables
+        - By choosing a random point (function variables) an output results and we then choose another point just slightly offset from the original one. Comparing the two outputs tells us which result is more in a valley than the other. This tells us the direction to continue this process so we find the deepest point in the valley. This is the "minimization" of gradient descent.
     - The goal of training a neural net is to find weights and biases which minimize the cost function so that inputs not in the training set provide accurate output
 
