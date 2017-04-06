@@ -9,8 +9,9 @@
 
 - Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
 - common formulaic symbols
-    - *Σ* - sigma (sum) - lowercase is `σ`
-    - *≡* - xi (identity) - both sides are true for all values
+    - *Σ* - sum (sigma uppercase)
+    - *σ* - sigmoid (sigama lowercase)
+    - *≡* - equivalence
     - *∂* - partial derivative
     - *η* - learning rate
     - *Δ* - delta
