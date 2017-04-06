@@ -49,4 +49,5 @@
     - *mini-batch* - random sample of inputs from a training set
     - *training epoch* - time to complete a training
     - *online/incremental learning* - gradient descent with a mini-batch of 1 input
+    - *hyper-parameters* - exclude the weights and biases and include the epoch, mini batch size, and learning rate
 
