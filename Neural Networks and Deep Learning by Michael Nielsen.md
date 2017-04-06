@@ -41,7 +41,8 @@
         - recurrent (looping allowed where select neuron(s) only fire for a limited duration)
     - *cost function* - quantifies accuracy of the weights and biases of a desired output
     - *gradient descent* - minimization algorithm aiding neural net learning by minimizing the cost function
-        - ball in valley analogy for cost function of two variables
+        - Ball in valley analogy for cost function of two variables 
+            - x,z as vars (floor plane) and y as function result (vertical valley depth)
         - By choosing a random point (function variables) an output results. The algorithm determines another point just slightly offset from the original one and compares the two outputs to learn which result is deeper in the valley (using the update rule `v → v′ = v−η∇C`). This informs the algorithm's direction to continue in to find the deepest point in the valley. This is the "minimization" of gradient descent as we seek the global minimum output.
     - The goal of training a neural net is to find weights and biases which minimize the cost function so that inputs not in the training set provide accurate output
 
