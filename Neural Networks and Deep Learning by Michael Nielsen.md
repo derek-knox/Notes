@@ -10,12 +10,12 @@
 - Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
 - common formulaic symbols
     - *Σ* - sum (sigma uppercase)
-    - *σ* - sigmoid (sigama lowercase)
+    - *σ* - sigmoid (sigma lowercase)
     - *≡* - equivalence
     - *∂* - partial derivative
     - *η* - learning rate
     - *Δ* - delta
-    - *∇* - gradient (∇C as gradient vector)
+    - *∇* - gradient (∇C as gradient vector) (nabla pronunication)
     - *ϵ* - epsilon (small quantity)
 - artificial neurons
     - *perceptron* - an artificial neuron with n binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value determining the output.
