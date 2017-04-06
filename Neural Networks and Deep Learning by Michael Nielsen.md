@@ -51,5 +51,6 @@
     - *online/incremental learning* - gradient descent with a mini-batch of 1 input
     - *hyper-parameters* - exclude the weights and biases and include the epoch, mini batch size, and learning rate
         - I imagine you could get meta and use an algorithm that learns the best hyper-parameters
+    - *shallow neural network* - neural network with one hidden layer
     - *deep neural network* - neural network with two or more hidden layers
 
