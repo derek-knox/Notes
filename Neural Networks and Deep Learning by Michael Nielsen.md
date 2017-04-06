@@ -48,4 +48,5 @@
     - *stochastic gradient descent* - optimized approach of gradient descent to approximate the gradient by sampling random test inputs in mini-batches
     - *mini-batch* - random sample of inputs from a training set
     - *training epoch* - time to complete a training
+    - *online/incremental learning* - gradient descent with a mini-batch of 1 input
 
