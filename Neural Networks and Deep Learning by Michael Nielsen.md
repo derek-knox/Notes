@@ -54,3 +54,6 @@
     - *shallow neural network* - neural network with one hidden layer
     - *deep neural network* - neural network with two or more hidden layers
 
+## Chapter 2 - How the backpropagation algorithm works
+
+- *backpropagation* - a fast algorithm for computing the gradient of the cost function
