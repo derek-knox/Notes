@@ -18,6 +18,7 @@
         - *δ* - delta error (lowercase)
     - *∇* - gradient (∇C as gradient vector) (nabla pronunication)
     - *ϵ* - epsilon (small quantity)
+    - *⊙* - Hadamard product (multiplies two matrices of same dimensions into a 3rd matrix)
 - artificial neurons
     - *perceptron* - an artificial neuron with n binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value determining the output.
         - Varying the weights and threshold result in different *decision making models*
@@ -59,7 +60,7 @@
 
 - *backpropagation* - a fast algorithm composed of four equations used to compute the gradient of the cost function
     - An equation for the error in the output layer
-    - An equation for the error δlδl in terms of the error in the next layer
+    - An equation for the error `δˡ` in terms of the error in the next layer
     - An equation for the rate of change of the cost with respect to any bias in the network
     - An equation for the rate of change of the cost with respect to any weight in the network
 - *weighted input* - `zˡⱼ` is just the weighted input to the activation function for neuron `j` in layer `l`
