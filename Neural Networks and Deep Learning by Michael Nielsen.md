@@ -31,7 +31,7 @@
         - Formula (`σ` = sigmoid function, `w` = weight vector, `x` = input vector, `b` = bias)
             - `z = w⋅x+b`
             - `output = σ(z)≡1/1+e^−z`
-- *activation function* - defines a node's output given a set of input(s) (*linear perceptron* and *sigmoid function* are two examples mentioned above)  
+- *activation function* - defines a neuron's output given a set of input(s) (*linear perceptron* and *sigmoid function* are two examples mentioned above)  
 - neural network
     - anatomy
         1. input layer comprised of input neuron(s)
