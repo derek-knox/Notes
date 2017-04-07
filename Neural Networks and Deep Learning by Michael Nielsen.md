@@ -57,4 +57,4 @@
 ## Chapter 2 - How the backpropagation algorithm works
 
 - *backpropagation* - a fast algorithm for computing the gradient of the cost function
-- *weighted input* - zˡⱼ is just the weighted input to the activation function for neuron j in layer l
+- *weighted input* - `zˡⱼ` is just the weighted input to the activation function for neuron `j` in layer `l`
