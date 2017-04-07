@@ -10,11 +10,12 @@
 - Neural networks leverage supplied *training examples* against a programmed system that learns from the examples by inferring rules for pattern recognition.
 - common formulaic symbols
     - *Σ* - sum (sigma uppercase)
-    - *σ* - sigmoid (sigma lowercase)
+        - *σ* - sigmoid (sigma lowercase)
     - *≡* - equivalence
     - *∂* - partial derivative
     - *η* - learning rate
     - *Δ* - delta
+        - *δ* - delta error (lowercase)
     - *∇* - gradient (∇C as gradient vector) (nabla pronunication)
     - *ϵ* - epsilon (small quantity)
 - artificial neurons
@@ -56,5 +57,5 @@
 
 ## Chapter 2 - How the backpropagation algorithm works
 
-- *backpropagation* - a fast algorithm for computing the gradient of the cost function
+- *backpropagation* - a fast algorithm composed of four equations used to compute the gradient of the cost function
 - *weighted input* - `zˡⱼ` is just the weighted input to the activation function for neuron `j` in layer `l`
