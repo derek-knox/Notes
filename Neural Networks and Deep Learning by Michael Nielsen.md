@@ -59,8 +59,10 @@
 ## Chapter 2 - How the backpropagation algorithm works
 
 - *backpropagation* - a fast algorithm composed of four equations used to compute the gradient of the cost function
-    - An equation for the error in the output layer
-    - An equation for the error `δˡ` in terms of the error in the next layer
-    - An equation for the rate of change of the cost with respect to any bias in the network
-    - An equation for the rate of change of the cost with respect to any weight in the network
+    - Equation descriptions
+        - An equation for the error in the output layer
+        - An equation for the error `δˡ` in terms of the error in the next layer
+        - An equation for the rate of change of the cost with respect to any bias in the network
+        - An equation for the rate of change of the cost with respect to any weight in the network
+    - "Think of backpropagation as a way of computing the gradient of the cost function by systematically applying the chain rule from multi-variable calculus."
 - *weighted input* - `zˡⱼ` is just the weighted input to the activation function for neuron `j` in layer `l`
