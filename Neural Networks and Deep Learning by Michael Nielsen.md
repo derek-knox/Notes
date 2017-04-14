@@ -77,7 +77,6 @@
 - *overfitting* - overtraining a network
 - *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
 - *generalization* - techniques to help reduce overfitting
-    - Examples
-        - weight decay - modification to a cost function in pursuit of small weights
-        - dropout - modification to hidden layers by excluding random neuron sets during training
-        - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (rotating/translating/skewing images for example)
+    - weight decay - modification to a cost function in pursuit of small weights
+    - dropout - modification to hidden layers by excluding random neuron sets during training
+    - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (rotating/translating/skewing images for example)
