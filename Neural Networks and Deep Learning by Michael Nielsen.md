@@ -67,3 +67,7 @@
     - "Think of backpropagation as a way of computing the gradient of the cost function by systematically applying the chain rule from multi-variable calculus."
     - "The backpropagation algorithm is a clever way of keeping track of small perturbations to the weights (and biases) as they propagate through the network, reach the output, and then affect the cost"
 - *weighted input* - `zˡⱼ` is just the weighted input to the activation function for neuron `j` in layer `l`
+
+## Chapter 3 - Improving the way neural networks learn
+
+- ...
