@@ -80,3 +80,4 @@
     Examples
     - weight decay - modification to a cost function in pursuit of small weights
     - dropout - modification to hidden layers by excluding random neuron sets during training
+    - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (images with minor rotations for example)
