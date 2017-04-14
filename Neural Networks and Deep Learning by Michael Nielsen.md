@@ -75,4 +75,4 @@
     - "Roughly speaking, the idea is that the cross-entropy is a measure of surprise"
 - *saturation* - state in which a neuron predominantly outputs values close to the asymptotic ends of the bounded activation function (negatively impacts learning)
 - *overfitting* - overtraining a network
-
+- *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
