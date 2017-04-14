@@ -81,4 +81,4 @@
     - weight decay - modification to a cost function in pursuit of small weights
     - dropout - modification to hidden layers by excluding random neuron sets during training
     - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (rotating/translating/skewing images for example)
-- *weight initialization* - weights input to a neuron are initialized as Gaussian random variables with mean 0 and standard deviation 11 divided by the square root of the number of connections input to the neuron
+- *weight initialization* - weights input to a neuron are initialized as Gaussian random variables with mean 0 and standard deviation 1 divided by the square root of the number of connections input to the neuron
