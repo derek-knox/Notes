@@ -72,3 +72,4 @@
 
 - Using the *cross-entropy* cost function instead of the *quadratic* cost function improves the speed of learning changes greatly. Essentially, when initial weight and bias values are far from their respective to-be-determined ideals, the quadratic cost function is slow. Replacing it with cross-entropy resolves this issue.
     - This is true in nets of sigmoid neurons, quadratic cost is fine for nets of perceptron/linear neurons.
+    - "Roughly speaking, the idea is that the cross-entropy is a measure of surprise"
