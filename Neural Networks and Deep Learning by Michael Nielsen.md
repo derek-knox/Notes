@@ -76,4 +76,7 @@
 - *saturation* - state in which a neuron predominantly outputs values close to the asymptotic ends of the bounded activation function (negatively impacts learning)
 - *overfitting* - overtraining a network
 - *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
-- *generalization* techniques to help reduce overfitting (weight decay is a common one)
+- *generalization* - techniques to help reduce overfitting
+    Examples
+    - weight decay - modification to a cost function in pursuit of small weights
+    - dropout - modification to hidden layers by excluding random neuron sets during training
