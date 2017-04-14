@@ -19,6 +19,7 @@
     - *∇* - gradient (∇C as gradient vector) (nabla pronunication)
     - *ϵ* - epsilon (small quantity)
     - *⊙* - Hadamard product (multiplies two matrices of same dimensions into a 3rd matrix)
+    - *λ* - regularization parameter
 - artificial neurons
     - *perceptron* - an artificial neuron with n binary inputs and 1 binary output. A *weight* is a real number associated with each input where the *weighted sum (Σ)* meets a real number *threshold* value determining the output.
         - Varying the weights and threshold result in different *decision making models*
@@ -76,7 +77,7 @@
 - *saturation* - state in which a neuron predominantly outputs values close to the asymptotic ends of the bounded activation function (negatively impacts learning)
 - *overfitting* - overtraining a network
 - *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
-- *generalization* - techniques to help reduce overfitting
+- *regularization* - techniques to help reduce overfitting
     - weight decay - modification to a cost function in pursuit of small weights
     - dropout - modification to hidden layers by excluding random neuron sets during training
     - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (rotating/translating/skewing images for example)
