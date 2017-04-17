@@ -82,3 +82,7 @@
     - dropout - modification to hidden layers by excluding random neuron sets during training
     - artificial training data expansion - duplicate training data and tweak it before appending it to the original training data set (rotating/translating/skewing images for example)
 - *weight initialization* - weights input to a neuron are initialized as Gaussian random variables with mean 0 and standard deviation 1 divided by the square root of the number of connections input to the neuron
+- *learning rate schedule* - dynamically adjusting the learning rate (as opposed to defining it constant) for improving network performance
+- As an author of Neural Networks, it can be very time consuming for a few core reasons:
+    1. Determining hyper-parameters that truly work for a given problem can take a lot of time
+    2. Computation is high and that is why there are so many tricks/optimization-hacks in an effort to find the ideal hyper-parameters. Improvements in computation enable faster iteration toward finding ideals.
