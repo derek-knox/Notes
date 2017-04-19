@@ -96,5 +96,6 @@
     
 ## Chapter 5 - Why are deep neural networks hard to train?
 
-- *vanishing gradient problem* - later layers of deep nets learn faster
-- *exploding gradient problem* - earlier layers of deep nets learn faster
+- *unstable gradient problem* "if we use standard gradient-based learning techniques, different layers in the network will tend to learn at wildly different speeds"
+    - *vanishing gradient problem* - later layers of deep nets learn faster
+    - *exploding gradient problem* - earlier layers of deep nets learn faster
