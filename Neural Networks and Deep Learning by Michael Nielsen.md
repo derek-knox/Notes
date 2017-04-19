@@ -91,5 +91,5 @@
 
 - *universality theorem* - neural networks with a single hidden layer can be used to approximate any continuous function to any desired precision
     - the single hidden layer is composed of neuron pairs mimicking a *step function* where `s=−b/w`. Each neuron pair is mapped over 0-1 for the entire neuron count. So choosing a large weight in conjunction with the step neuron's 0-1 value results in a calculable bias (`b=−ws`). So the more pairs you have, the more accurate the approximation.
-    - Example: 6 neurons as 3 pairs map to [[0,.33],[.33,.66],[.66,1]]
+        - Example: 6 neurons as 3 pairs map to [[0,.33],[.33,.66],[.66,1]]
     - "In essence, we use a single-layer neural networks to build a lookup table for the function"
