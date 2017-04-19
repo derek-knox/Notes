@@ -55,7 +55,7 @@
     - *hyper-parameters* - exclude the weights and biases and include the epoch count, mini batch size, and learning rate
         - I imagine you could get meta and use an algorithm that learns the best hyper-parameters
     - *shallow neural network* - neural network with one hidden layer
-    - *deep neural network* - neural network with two or more hidden layers
+    - *deep neural network* - neural network with two or more hidden layers (layers of abstraction)
 
 ## Chapter 2 - How the backpropagation algorithm works
 
