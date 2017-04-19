@@ -89,7 +89,6 @@
 
 ## Chapter 4 - A visual proof that neural nets can compute any function
 
-- universality theorem - neural networks with a single hidden layer can be used to approximate any continuous function to any desired precision
-    - a neural network can compute any function, not exactly, but by increasing the hidden neuron count, we can improve the approximation
-        - the single hidden layer is composed of pairs of neurons where the weight of each is mapped from 0-1 over the entire neuron count
+- *universality theorem* - neural networks with a single hidden layer can be used to approximate any continuous function to any desired precision
+    - the single hidden layer is composed of neuron pairs that each mimic a *step function* where `s=−b/w`. So a very large weight and a small bias is chosen to get the step (approximation) for a particular neuron pair. Each neuron pair is mapped over 0-1 for the entire neuron count. So the more pairs you have, the more accurate the approximation.
     - "In essence, we use a single-layer neural networks to build a lookup table for the function"
