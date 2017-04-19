@@ -100,4 +100,4 @@
     - *vanishing gradient problem* - later layers of deep nets learn faster
         - "...empirically it is typically found in sigmoid networks that gradients vanish exponentially quickly in earlier layers. As a result, learning slows down in those layers. This slowdown isn't merely an accident or an inconvenience: it's a fundamental consequence of the approach we're taking to learning."
     - *exploding gradient problem* - earlier layers of deep nets learn faster
-- "...the choice of activation function, the way weights are initialized, and even details of how learning by gradient descent is implemented" make it hard to train deep nets
+- "...the choice of activation function, the way weights are initialized, and even details of how learning by gradient descent is implemented... choice of network architecture and other hyper-parameters" make it hard to train deep nets
