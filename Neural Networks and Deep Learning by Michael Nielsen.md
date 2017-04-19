@@ -98,4 +98,5 @@
 
 - *unstable gradient problem* - "if we use standard gradient-based learning techniques, different layers in the network will tend to learn at wildly different speeds"
     - *vanishing gradient problem* - later layers of deep nets learn faster
+        - "...empirically it is typically found in sigmoid networks that gradients vanish exponentially quickly in earlier layers. As a result, learning slows down in those layers. This slowdown isn't merely an accident or an inconvenience: it's a fundamental consequence of the approach we're taking to learning."
     - *exploding gradient problem* - earlier layers of deep nets learn faster
