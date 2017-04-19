@@ -95,3 +95,6 @@
     - "In essence, we use a single-layer neural networks to build a lookup table for the function"
     
 ## Chapter 5 - Why are deep neural networks hard to train?
+
+- *vanishing gradient problem* - later layers of deep nets learn faster
+- *exploding gradient problem* - earlier layers of deep nets learn faster
