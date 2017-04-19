@@ -86,3 +86,10 @@
 - As an author of Neural Networks, it can be very time consuming for a few core reasons:
     1. Determining hyper-parameters that truly work for a given problem can take a lot of time
     2. Computation (in real-time) is high and that is why there are so many tricks/optimization-hacks in an effort to find the ideal hyper-parameters. Improvements in computation enable faster iteration toward finding ideals.
+
+## Chapter 4 - A visual proof that neural nets can compute any function
+
+- universality theorem - neural networks with a single hidden layer can be used to approximate any continuous function to any desired precision
+    - a neural network can compute any function, not exactly, but by increasing the hidden neuron count, we can improve the approximation
+        - the single hidden layer is composed of pairs of neurons where the weight of each is mapped from 0-1 over the entire neuron count
+    - "In essence, we use a single-layer neural networks to build a lookup table for the function"
