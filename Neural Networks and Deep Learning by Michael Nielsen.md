@@ -113,7 +113,8 @@
             - *feature map* - embodies the input layer to the first hidden layer
             - *filter* - defined by a set of shared weights and bias
             - *convolutional layer* - a layer consisting of 1 or more feature maps
-        3. *pooling layers* - a layer succeeding each feature map of a convolutional layer that prepares a condensed feature map for subsequent layers 
+        3. *pooling layers* - a layer succeeding each feature map of a convolutional layer that prepares a condensed feature map for subsequent layers
+            - *max-pooling* - determines if a sub-feature exists within a region
     - "convolutional networks are well adapted to the translation invariance of images"
     - Convolutional nets have a fraction of the parameters required (due to shared weights and bias) for traditional nets and thus train and perform much faster
 
