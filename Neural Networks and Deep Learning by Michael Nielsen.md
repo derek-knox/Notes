@@ -104,15 +104,16 @@
 
 ## Chapter 6 - Deep learning
 
-- *convolutional neural network* - a feed-forward net in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex (spatial understanding)
+- *convolutional neural network* - a feed-forward net in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex (spatial/feature/pattern understanding)
     - components:
         1. *local receptive field* - each neuron of a hidden layer consumes the input of a region of input neurons where a stride length helps determine how the regions are defined
             - traditional nets in contrast map every single input to each neuron in a subsequent layer
         2. *shared weights and biases* - each neuron of a hidden layer shares the same weights (to the region) and bias enabling each hidden layer to detect a particular "feature" or "pattern" of the image as a whole
             - traditional nets in contrast do not share the weight and bias
+            - *feature map* - embodies the input layer to the first hidden layer
+            - *filter* - defined by a set of shared weights and bias
+            - *convolutional layer* - a layer consisting of 1 or more feature maps
         3. *pooling layers* - a layer succeeding each feature map of a convolutional layer that prepares a condensed feature map for subsequent layers 
     - "convolutional networks are well adapted to the translation invariance of images"
     - Convolutional nets have a fraction of the parameters required (due to shared weights and bias) for traditional nets and thus train and perform much faster
-    - *feature map* - the input layer to the first hidden layer
-    - *filter* - defined by a set of shared weights and bias
-    - *convolutional layer* - a layer consisting of 1 or more feature maps
+
