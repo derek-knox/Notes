@@ -105,7 +105,7 @@
 ## Chapter 6 - Deep learning
 
 - *convolutional neural network* - a feed-forward net in which the connectivity pattern between its neurons is inspired by the organization of the animal visual cortex (spatial understanding)
-    - 3 components:
+    - components:
         1. *local receptive field* - each neuron of a hidden layer consumes the input of a region of input neurons where a stride length helps determine how the regions are defined
             - traditional nets in contrast map every single input to each neuron in a subsequent layer
         2. *shared weights and biases* - each neuron of a hidden layer shares the same weights (to the region) and bias enabling each hidden layer to detect a particular "feature" or "pattern" of the image as a whole
