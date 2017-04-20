@@ -74,7 +74,7 @@
 - Using the *cross-entropy* cost function instead of the *quadratic* cost function improves the speed of learning changes greatly. Essentially, when initial weight and bias values are far from their respective to-be-determined ideals, the quadratic cost function is slow. Replacing it with cross-entropy resolves this issue.
     - This is true in nets of sigmoid neurons, quadratic cost is fine for nets of perceptron/linear neurons.
     - "Roughly speaking, the idea is that the cross-entropy is a measure of surprise"
-- *softmax* - a softmax layer outputs a probability distribution which is often useful/convient for interpretting the output activation 
+- *softmax function* - a softmax layer outputs a probability distribution which is often useful/convient for interpretting the output activation 
 - *saturation* - state in which a neuron predominantly outputs values close to the asymptotic ends of the bounded activation function (negatively impacts learning)
 - *overfitting* - overtraining a network
 - *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
