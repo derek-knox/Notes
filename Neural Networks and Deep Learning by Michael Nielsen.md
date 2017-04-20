@@ -124,4 +124,4 @@
             - *max-pooling* - determines if a sub-feature exists within a region
     - "convolutional networks are well adapted to the translation invariance of images"
     - Convolutional nets have a fraction of the parameters required (due to shared weights and bias) for traditional nets and thus train and perform much faster
-
+- *deep belief network* - is a generative model net that can "run the network backward" which enables generating values for the input activations (ex. generate images of MNIST handwritten digits based on network settings)
