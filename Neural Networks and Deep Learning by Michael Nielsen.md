@@ -44,7 +44,9 @@
         3. output layer comprised of output neuron(s)
     - types
         - feedforward (no loops)
+            - a single input determines the activations of all the neurons through the remaining layers
         - recurrent (looping allowed where select neuron(s) only fire for a limited duration)
+            - nets in which there is some notion of dynamic change over time (there are many models)
     - *cost function* - quantifies accuracy of the weights and biases of a desired output
     - *gradient descent* - minimization algorithm aiding neural net learning by minimizing the cost function
         - Ball in valley analogy for cost function of two variables 
@@ -77,7 +79,7 @@
 - Using the *cross-entropy* cost function instead of the *quadratic* cost function improves the speed of learning changes greatly. Essentially, when initial weight and bias values are far from their respective to-be-determined ideals, the quadratic cost function is slow. Replacing it with cross-entropy resolves this issue.
     - This is true in nets of sigmoid neurons, quadratic cost is fine for nets of perceptron/linear neurons.
     - "Roughly speaking, the idea is that the cross-entropy is a measure of surprise"
-- *softmax function* - a softmax layer outputs a probability distribution which is often useful/convient for interpretting the output activation 
+- *softmax function* - a softmax layer outputs a probability distribution which is often useful/convient for interpreting the output activation 
 - *saturation* - state in which a neuron predominantly outputs values close to the asymptotic ends of the bounded activation function (negatively impacts learning)
 - *overfitting* - overtraining a network
 - *hold out* - validation data as a type of training data that helps us learn good hyper-parameters that's held out of the normal training data
