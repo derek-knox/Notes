@@ -110,7 +110,7 @@
             - traditional nets in contrast map every single input to each neuron in a subsequent layer
         2. *shared weights and biases* - each neuron of a hidden layer shares the same weights (to the region) and bias enabling each hidden layer to detect a particular "feature" or "pattern" of the image as a whole
             - traditional nets in contrast do not share the weight and bias
-        3. *pooling layers* - layers immidiately succeeding convolutional layers responsible for simplifying the output
+        3. *pooling layers* - a layer succeeding each feature map of a convolutional layer that prepares a condensed feature map for subsequent layers 
     - "convolutional networks are well adapted to the translation invariance of images"
     - Convolutional nets have a fraction of the parameters required (due to shared weights and bias) for traditional nets and thus train and perform much faster
     - *feature map* - the input layer to the first hidden layer
