@@ -10,7 +10,7 @@
   - atoms with a distinct proton count are of a particular type
     - *neutral* - a particular atom type of equal proton and electron count (normal)
     - *isotope* - a particular atom type where neutron count varies (version)
-    - *ion* - a particular atom type where electron count varies (version)
+    - *ion* - a particular atom type where electron count varies (charge)
   - anatomy
     - *nucleus* - proton and neutron cluster
     - *shell* - electron orbit of nucleus
