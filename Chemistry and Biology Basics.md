@@ -18,9 +18,9 @@
 - *element* - substance composed of a particular type of atom
 - *molecule* - composition of two or more atoms (not necessarily different atom types)
 - *compound* - composition of two or more elements (two distinct element types)
-- bonds
-  - ionic - bonds between metals and non-metals (tranferred electrons)
-  - covalent - bonds between non-metals (shared electrons)
+- common bonds
+  - *ionic* - bonds between metals and non-metals (tranferred electrons)
+  - *covalent* - bonds between non-metals (shared electrons)
 - *periodic table of elements* 
   - the atomic number of each element defines its atom's proton/electron count
   - row - each of seven rows defines the electron shell count for each element in the row where the amount of elements in each row signifies each shell's maximum electron capacity
