@@ -36,5 +36,16 @@
   - state augments and overrides all other styles (so `!important` is valid for states)
     1. State styles can apply to layout and/or module styles
     2. State styles indicate a JavaScript dependency.
+  - "In a case where a state rule is made for a speci c module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
+    ```
+    .tab {
+      background-color: purple;
+      color: white;
+    }
+    .is-tab-active {
+      background-color: white;
+      color: black;
+    }
+    ```
 ### Theme
   - "are similar to state rules in that they describe how modules or layouts might look. Most sites don’t require a layer of theming but it is good to be aware of it"
