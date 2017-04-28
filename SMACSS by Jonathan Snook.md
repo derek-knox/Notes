@@ -33,5 +33,8 @@
   - exist within layout elements or other modules
 ### State
   - "ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded? Is it ac- tive or inactive? They are about describing how a module or layout looks on screens that are smaller or bigger. They are also about de- scribing how a module might look in di erent views like the home page or the inside page"
+  - state augments and overrides all other styles (so `!important` is valid for states)
+    1. State styles can apply to layout and/or module styles
+    2. State styles indicate a JavaScript dependency.
 ### Theme
   - "are similar to state rules in that they describe how modules or layouts might look. Most sites don’t require a layer of theming but it is good to be aware of it"
