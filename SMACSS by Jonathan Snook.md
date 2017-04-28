@@ -36,9 +36,9 @@
   - state augments and overrides all other styles (so `!important` is valid for states but use sparingly if at all)
     1. State styles can apply to layout and/or module styles
     2. State styles indicate a JavaScript dependency.
-      1. JavaScript
-      2. psudo-class
-      3. media query
+        1. JavaScript
+        2. psudo-class
+        3. media query
   - "In a case where a state rule is made for a specific module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
     ```
     .tab {
