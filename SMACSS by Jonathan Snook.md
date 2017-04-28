@@ -1,6 +1,6 @@
 # SMACSS by Jonathan Snook
 
-Categorization
+## Categorization
 1. Base
   - "almost exclusively single ele- ment selectors but it could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors"
   - element selectors
@@ -17,5 +17,3 @@ Categorization
   - "ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded? Is it ac- tive or inactive? They are about describing how a module or layout looks on screens that are smaller or bigger. They are also about de- scribing how a module might look in di erent views like the home page or the inside page"
 5. Theme
   - "are similar to state rules in that they describe how modules or layouts might look. Most sites don’t require a layer of theming but it is good to be aware of it"
-
-  
