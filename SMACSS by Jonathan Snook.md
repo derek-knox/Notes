@@ -36,7 +36,7 @@
   - state augments and overrides all other styles (so `!important` is valid for states)
     1. State styles can apply to layout and/or module styles
     2. State styles indicate a JavaScript dependency.
-  - "In a case where a state rule is made for a speci c module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
+  - "In a case where a state rule is made for a specific module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
     ```
     .tab {
       background-color: purple;
@@ -49,3 +49,23 @@
     ```
 ### Theme
   - "are similar to state rules in that they describe how modules or layouts might look. Most sites don’t require a layer of theming but it is good to be aware of it"
+    ```
+    /* in module-name.css */
+    .mod {
+      border: 1px solid;
+    }
+    /* in theme.css */
+    .mod {
+      border-color: blue;
+    }
+    ```
+  - "For more extensive theming, using a `theme-` prefix for specific theme components will make it easier to apply them to more elements on the page"
+    ```
+    /* in theme.css */
+    .theme-border {
+      border-color: purple;
+    }
+    .theme-background {
+      background: linear-gradient( ... );
+    }
+    ```
