@@ -1,12 +1,15 @@
 # SMACSS by Jonathan Snook
 
 ## Categorization
+
 ### Base
   - "almost exclusively single element selectors but it could include attribute selectors, pseudo-class selectors, child selectors or sibling selectors"
   - element selectors
+
 ### Layout
   - "divide the page into sections. Layouts hold one or more modules together"
   - header, footer, sidebar, etc (core layout pieces often prefixed with `l-header` or `layout-header`)
+
 ### Module
   - "are the reusable, modular parts of our design"
   - class selectors lacking prefix (no ids or element selectors)
@@ -31,15 +34,17 @@
       }
       ```
   - exist within layout elements or other modules
+
 ### State
   - "ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded? Is it ac- tive or inactive? They are about describing how a module or layout looks on screens that are smaller or bigger. They are also about de- scribing how a module might look in di erent views like the home page or the inside page"
+  - "In a case where a state rule is made for a specific module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
   - state augments and overrides all other styles (so `!important` is valid for states but use sparingly if at all)
     1. State styles can apply to layout and/or module styles
     2. State styles indicate a JavaScript dependency.
-        1. JavaScript
-        2. psudo-class
-        3. media query
-  - "In a case where a state rule is made for a specific module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
+        1. JavaScript (client js - user interaction or timing)
+        2. psudo-class (browser js - built-in)
+        3. media query (browser js - built-in)
+  - "With SMACSS, the intent is to keep the styles that pertain to a spe- cific module with the rest of the module. That means that instead of having a single break point, either in a main CSS  le or in a sepa- rate media query style sheet, place media queries around the mod- ule states"
     ```
     .tab {
       background-color: purple;
@@ -50,6 +55,7 @@
       color: black;
     }
     ```
+
 ### Theme
   - "are similar to state rules in that they describe how modules or layouts might look. Most sites don’t require a layer of theming but it is good to be aware of it"
     ```
@@ -72,3 +78,6 @@
       background: linear-gradient( ... );
     }
     ```
+    
+## Depth of Applicability
+
