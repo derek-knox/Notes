@@ -33,9 +33,12 @@
   - exist within layout elements or other modules
 ### State
   - "ways to describe how our modules or layouts will look when in a particular state. Is it hidden or expanded? Is it ac- tive or inactive? They are about describing how a module or layout looks on screens that are smaller or bigger. They are also about de- scribing how a module might look in di erent views like the home page or the inside page"
-  - state augments and overrides all other styles (so `!important` is valid for states)
+  - state augments and overrides all other styles (so `!important` is valid for states but use sparingly if at all)
     1. State styles can apply to layout and/or module styles
     2. State styles indicate a JavaScript dependency.
+      1. JavaScript
+      2. psudo-class
+      3. media query
   - "In a case where a state rule is made for a specific module, the state class name should include the module name in it. The state rule should also reside with the module rules and not with the rest of the global state rules."
     ```
     .tab {
