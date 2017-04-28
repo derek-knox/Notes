@@ -44,7 +44,7 @@
         1. JavaScript (client js - user interaction or timing)
         2. psudo-class (browser js - built-in)
         3. media query (browser js - built-in)
-  - "With SMACSS, the intent is to keep the styles that pertain to a spe- cific module with the rest of the module. That means that instead of having a single break point, either in a main CSS  le or in a sepa- rate media query style sheet, place media queries around the mod- ule states"
+  - "With SMACSS, the intent is to keep the styles that pertain to a specific module with the rest of the module. That means that instead of having a single break point, either in a main CSS file or in a separate media query style sheet, place media queries around the module states" - if using a preprocessor use Nesting
     ```
     .tab {
       background-color: purple;
@@ -79,5 +79,20 @@
     }
     ```
     
-## Depth of Applicability
+## General Notes
 
+- Be conscious of the depth selectors are applied, keep this minimal. Ideally, leverage modules and module sub-classes to keep things lighter and more open to being reused elsewhere in the page/app as opposed to having a long chain.
+- always increase semantics and decrease reliance on specific HTML
+- File guidelines:
+  - Place all Base rules into their own file.
+  - Depending on the type of layouts you have, either place all of them into a single file or major layouts into separate files.
+  - Put each module into its own file.
+  - Depending on size of project, place sub-modules into their own file.
+  - Place global states into their own file.
+  - Place layout and module states, including media queries that affect those layouts and modules, into the module files.
+- It is preferred to make a module for certain base elements when they serve a specific purpose (`<table>`, `<button>`, `<input>`) as opposed to being defined in the base file
+- CSS property order
+  1. Box
+  2. Border
+  3. Background 4. Text
+  5. Other
