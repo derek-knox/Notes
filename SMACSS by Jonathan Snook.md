@@ -94,5 +94,6 @@
 - CSS property order
   1. Box
   2. Border
-  3. Background 4. Text
+  3. Background
+  4. Text
   5. Other
