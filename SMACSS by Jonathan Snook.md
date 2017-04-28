@@ -11,6 +11,13 @@
   - "are the reusable, modular parts of our design"
   - class selectors lacking prefix (no ids or element selectors)
     - heavily prefer child class selectors vs child element selectors
+      Ex. 
+      ```
+      <div class="fld">
+        <span class="fld-name">Folder Name</span>
+        <span class="fld-items">(32 items)</span>
+      </div>
+      ```
     - *"Only include a selector that includes semantics. A span or div holds none. A heading has some. A class defined on an element has plenty."*
   - exist within layout elements or other modules
 ### State
