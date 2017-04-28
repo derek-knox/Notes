@@ -11,7 +11,7 @@
   - "are the reusable, modular parts of our design"
   - class selectors lacking prefix (no ids or element selectors)
     - heavily prefer child class selectors vs child element selectors
-      Ex. 
+    - Example:
       ```
       <div class="fld">
         <span class="fld-name">Folder Name</span>
