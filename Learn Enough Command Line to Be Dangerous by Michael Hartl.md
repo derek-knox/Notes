@@ -31,4 +31,10 @@
   
 ## Manipulating files
 
-- `>` - redirect (`echo "hello world" > hello.txt` redirects the string into a new .txt file)
+- `>` - redirect (`echo "hello" > hello.txt` redirects the string into a new .txt file)
+- `>>` - append (`echo "world" >> hello.txt` appends string to file)
+- `cat` - concatenate (`cat hello.txt` allows quick-and-dirty output of a file)
+- `diff` - compare file contents (`diff hello.txt world.txt`)
+- `ls` - list files and directories in current directory 
+  - `ls *.txt` list all txt files via wildcard
+  - `ls -a` list all files (including hidden)
