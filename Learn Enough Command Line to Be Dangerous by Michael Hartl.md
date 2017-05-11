@@ -25,5 +25,10 @@
   - `⌥-click` - direct cursor placement
   - `^A` - line start jump
   - `^E` - line end jump
-  - `^U` - line clear
-  - `clear` or `^L` - clear CLI screen
+  - `^U` - line delete
+  - `clear` or `^L` - clear screen
+  - `exit` or `^D` - exit terminal
+  
+## Manipulating files
+
+- `>` - redirect (`echo "hello world" > hello.txt` redirects the string into a new .txt file)
