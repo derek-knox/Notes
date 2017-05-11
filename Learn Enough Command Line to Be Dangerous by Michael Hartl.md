@@ -13,11 +13,17 @@
   - *man* - format and display the on-line manual pages, `man echo` = echo as argument resulting in listing of info about `echo`
   - *echo* - displays a string of text
 - Keyboard mapping
-  - Command	⌘
-  - Control	⌃
-  - Shift	⇧
-  - Option	⌥
-  - Up, down, left, right	↑ ↓ ← →
-  - Enter/Return	↵
-  - Tab	⇥
-  - Delete	⌫
+  - Command	`⌘`
+  - Control	`⌃`
+  - Shift	`⇧`
+  - Option	`⌥`
+  - Up, down, left, right	`↑` `↓` `←` `→`
+  - Enter/Return	`↵`
+  - Tab	`⇥`
+  - Delete	`⌫`
+- Navigation shortcuts
+  - `⌥-click` - direct cursor placement
+  - `^A` - line start jump
+  - `^E` - line end jump
+  - `^U` - line clear
+  - `clear` or `^L` - clear CLI screen
