@@ -2,7 +2,7 @@
 
 ## Summary of my understanding
 1. You launch the terminal program (Terminal, iTerm, etc) which hosts and automatically launches a shell program (bash, fish, etc) that provides an API (accessible via command line commands) for executing OS-level functionality.
-2. This shell program launch is referred to as a shell session, one where temporary, in addition to persistent, Environment Variables are accessible (CRUD).
+2. This shell program launch is referred to as a shell session, one where temporary, in addition to persistent, Environment Variables are accessible (CRUD). The persistent ones result from automatic execution of the `/.bash_profile` shell script at session launch.
 3. The PATH is a persistent Environment Variable denoting a list of OS directory paths where executable programs reside.
 4. Commands can then be entered via the command line interface (CLI - the terminal with its shell) which are essentially function calls where:
     - The command denotes the function name
