@@ -5,10 +5,7 @@
 - Terminal and iTerm are examples of macOS command line programs
 - Anatomy of a command line
   ![Anatomy of a command line](https://softcover.s3.amazonaws.com/636/learn_enough_command_line/images/figures/anatomy.png "Anatomy of a command line")
-  - prompt (no need to type and provided automatically by the terminal)
-  - command
-  - option
-  - argument
+  - prompt (no need to type and provided automatically by the terminal), command, option, and argument
 - Terminal vs. Console vs. Shell
   - terminal = text input/output environment
   - console = physical terminal
