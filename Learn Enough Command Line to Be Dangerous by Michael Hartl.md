@@ -49,6 +49,17 @@
 ## Inspecting files
 
 - `curl` - fetch URL
+- `ping` - pings URL continually
 - `head` - view first 10 lines of file
 - `tail` - view last 10 lines of file
-- `|` - "pipes" (`head sonnets.txt | wc`)
+- `|` - pipes command result as arg to next command (`head sonnets.txt | wc`)
+- `grep` - file pattern searcher (`-r` powerful recursion option useful in traversing directories)
+- `~` - home directory shorthand
+- "`sudo` gives ordinary users the power to execute commands as the superuser"
+- `mkdir` - make directory
+- `cd` - change directory
+  - `.` - current directory (`cp ~/text_files/sonnets.txt .` copies sonnets.txt to current directory or `open .` opens finder to current directory)
+  - `cd ..` - move up one directory
+  - `cd` or `cd ~` - go to root user directory
+  - `cd -` - jump to previously focused directory
+- `pwd` - print working directory
