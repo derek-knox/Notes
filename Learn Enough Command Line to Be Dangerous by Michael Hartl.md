@@ -4,6 +4,7 @@
 - *ssh* - secure shell
 - Terminal and iTerm are examples of macOS command line programs
 - Anatomy of a command line
+  ![Anatomy of a command line](https://softcover.s3.amazonaws.com/636/learn_enough_command_line/images/figures/anatomy.png "Anatomy of a command line")
   - prompt (no need to type and provided automatically by the terminal)
   - command
   - option
@@ -42,3 +43,12 @@
 - `ls` - list files and directories in current directory 
   - `ls *.txt` list all txt files via wildcard
   - `ls -a` list all files (including hidden)
+- `touch` - create empty file
+- `mv` - move and rename (just renames if no move target directory)
+- `cp` - copy
+- `rm` - remove/delete
+- `⇥⇥` - tab completion (super useful autofill/suggest)
+
+## Inspecting files
+
+- 
