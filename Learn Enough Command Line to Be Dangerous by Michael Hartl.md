@@ -75,5 +75,5 @@
   export PATH=$PATH:/something/i/need/to/add
   export NEW_ENVIRONMENT_VARIABLE=value
   ```
-- Environment variables are read from `.bash_profile` at the start of the shell session, so after you save the file you'll need open a new terminal window before the changes will take effect."
+  Environment variables are read from `.bash_profile` at the start of the shell session, so after you save the file you'll need open a new terminal window before the changes will take effect."
 - "`~/.bash_profile` is actually a bash script which, by convention, is executed every time bash starts up (i.e. whenever you open a new terminal)"
