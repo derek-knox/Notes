@@ -9,7 +9,8 @@
     - The option(s) denote an overridable config argument
     - The argument(s) denote the non-config core data to be operated against
     - The function execution results in a returned value that subsequent commands may leverage
-5. *If using a version manager like `asdf` (to manage language versions) a `.tool-versions` file needs to be created at the user root (and in a particular directory) to properly route commands normally found in the PATH*
+
+*If using a version manager like `asdf` (to manage language versions) a `.tool-versions` file needs to be created at the user root (and in a particular directory) to properly route commands normally found in the PATH*
 
 ## Basics
 - *ssh* - secure shell
