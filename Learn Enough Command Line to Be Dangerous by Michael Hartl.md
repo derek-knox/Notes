@@ -5,10 +5,10 @@
 2. This shell program launch is referred to as a shell session, one where temporary, in addition to persistent, Environment Variables are accessible (CRUD).
 3. The PATH is a persistent Environment Variable denoting a list of OS directory paths where executable programs reside.
 4. Commands can then be entered via the command line interface (CLI - the terminal with its shell) which are essentially function calls where:
-  - The command denotes the function name
-  - The option(s) denote an overridable config argument
-  - The argument(s) denote the non-config core data to be operated against
-  - The function execution results in a returned value that subsequent commands may leverage
+    - The command denotes the function name
+    - The option(s) denote an overridable config argument
+    - The argument(s) denote the non-config core data to be operated against
+    - The function execution results in a returned value that subsequent commands may leverage
 
 ## Basics
 - *ssh* - secure shell
