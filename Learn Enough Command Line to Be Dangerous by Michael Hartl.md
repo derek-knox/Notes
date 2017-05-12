@@ -66,7 +66,8 @@
 
 
 ## Understanding Environment Variables and the Unix Path
-*This section is from https://cbednarski.com/articles/understanding-environment-variables-and-the-unix-path/
+*This section is from https://cbednarski.com/articles/understanding-environment-variables-and-the-unix-path/*
+
 "When you type the name of a program `cat` or `grep`, your shell looks in all the directories specified in your `PATH` to try to find a matching program. `PATH` itself is an environment variable (other common ones include `EDITOR` and `JAVA_HOME`). Environment variables are global variables that live in your shell session, and help your shell fill in shortcuts or specify preferences."
 
 "You can dynamically set (or change) environment variables using export, or persistently set the values in your `~/.bash_profile` or `~/.bashrc` file. For example, we set `EDITOR` to vim, then use `$EDITOR` to invoke vim on our `.bash_profile` so we can persist some other environment variables:
