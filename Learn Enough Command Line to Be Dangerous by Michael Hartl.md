@@ -8,6 +8,10 @@
   - command
   - option
   - argument
+- Terminal vs. Console vs. Shell
+  - terminal = text input/output environment
+  - console = physical terminal
+  - shell = command line interpreter
 - `Ctrl-C` or `^C`- "cancel" to escape to a fresh prompt for entering a command
 - *shell* - program used to run a command line
   - *man* - format and display the on-line manual pages, `man echo` = echo as argument resulting in listing of info about `echo`
