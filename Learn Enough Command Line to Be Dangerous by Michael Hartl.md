@@ -48,4 +48,7 @@
 
 ## Inspecting files
 
-- 
+- `curl` - fetch URL
+- `head` - view first 10 lines of file
+- `tail` - view last 10 lines of file
+- `|` - "pipes" (`head sonnets.txt | wc`)
