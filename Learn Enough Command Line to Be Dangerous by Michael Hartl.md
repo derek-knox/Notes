@@ -69,11 +69,11 @@
 *This section is from https://cbednarski.com/articles/understanding-environment-variables-and-the-unix-path/*
 - "When you type the name of a program `cat` or `grep`, your shell looks in all the directories specified in your `PATH` to try to find a matching program. `PATH` itself is an environment variable (other common ones include `EDITOR` and `JAVA_HOME`). Environment variables are global variables that live in your shell session, and help your shell fill in shortcuts or specify preferences."
 - "You can dynamically set (or change) environment variables using export, or persistently set the values in your `~/.bash_profile` or `~/.bashrc` file. For example, we set `EDITOR` to vim, then use `$EDITOR` to invoke vim on our `.bash_profile` so we can persist some other environment variables:
-```
-$ export EDITOR=vim
-$ $EDITOR ~/.bash_profile
-export PATH=$PATH:/something/i/need/to/add
-export NEW_ENVIRONMENT_VARIABLE=value
-```
+  ```
+  $ export EDITOR=vim
+  $ $EDITOR ~/.bash_profile
+  export PATH=$PATH:/something/i/need/to/add
+  export NEW_ENVIRONMENT_VARIABLE=value
+  ```
 - Environment variables are read from `.bash_profile` at the start of the shell session, so after you save the file you'll need open a new terminal window before the changes will take effect."
 - "`~/.bash_profile` is actually a bash script which, by convention, is executed every time bash starts up (i.e. whenever you open a new terminal)"
