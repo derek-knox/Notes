@@ -8,7 +8,7 @@ Rxjs is a system of design patterns for one-way data-flow for SPA/RIA client app
 5. Since the **store** is observable, all the components update automatically.
 
 ## Redux Principles
-- *via http://redux.js.org/docs/introduction/ThreePrinciples.html*
+*via http://redux.js.org/docs/introduction/ThreePrinciples.html*
 1. *Single source of truth* - The **state** of your whole application is stored in an object tree within a single **store**.
 2. *State is read-only* - The only way to change the state is to emit an *action*, an object describing what happened.
 3. *Changes are made with pure functions* - To specify how the **state** tree is transformed by **actions**, you write pure **reducer**s.
