@@ -39,11 +39,9 @@
 - *Dynamic Host Configuration Protocol (DHCP)* - after a computer successfully connects to a base station router, it sends another broadcast message in search of a gateway router. If one exists, the gateway router replies with a temporary IP address that the computer can use to connect to the internet.
 - There are five Regional Internet Registries (RIRs) that allocate IP addresses around the world to Internet Service Providers (ISPs) which are responsible for further allocating IP addresses for a given area.
 
-## The Domain Name System (DNS)
-- 
-
 ## Transport Layer
-- 
+- Enables server/client applications to work by ensuring packets that arrive out of order are able to be reassembled (via packet offset values). Additionally, packets that never arrive can be resent via messaging between client and server.
+- A server's IP address in conjunction with its port assignments allow a client to access a specific application being served on a computer.
 
 ## Application Layer
 - 
