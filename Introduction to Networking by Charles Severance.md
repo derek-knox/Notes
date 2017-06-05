@@ -10,13 +10,13 @@
 
 ## Network Architecture
 - *Four-Layer TCP/IP Model* - Link > Internetwork > Transport > Application
-  - *link* - wired or wireless computer connections
-    - Encode and send data across link 
-      - wireless = agreed upon digital encoding in signal of agreed upon radio frequencies
-      - wired (electric) = agreed upon speed of bits in signal of agreed upon wire voltage
-      - wired (fiber optic) = agreed upon speed of light frequencies in signal of agreed upon light frequencies
-    - Async sending to support multiple computers
-      - *Carrier Sense Multiple Access w/Collision Detection* (CSMA/CD) - each computer simultanously sends packets while listening for the sent signal, where it continues if it "hears" itself. It pauses for a random interval and retries if it "hears" another signal (another computer on the network). This system ensures all computers on the network share access to the router.
-  - *internetwork* - internet protocol (IP) ...
-  - *transport* - transport control protocol (TCP) ...
-  - *application* - end user interaction interface (browser for example)
+- *link* - wired or wireless computer connections
+  - Encode and send data across link 
+    - wireless = agreed upon digital encoding in signal of agreed upon radio frequencies
+    - wired (electric) = agreed upon speed of bits in signal of agreed upon wire voltage
+    - wired (fiber optic) = agreed upon speed of light frequencies in signal of agreed upon light frequencies
+  - Async sending to support multiple computers
+    - *Carrier Sense Multiple Access w/Collision Detection* (CSMA/CD) - each computer simultanously sends packets while listening for the sent signal, where it continues if it "hears" itself. It pauses for a random interval and retries if it "hears" another signal (another computer on the network). This system ensures all computers on the network share access to the router.
+- *internetwork* - internet protocol (IP) ...
+- *transport* - transport control protocol (TCP) ...
+- *application* - end user interaction interface (browser for example)
