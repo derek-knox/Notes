@@ -1,4 +1,4 @@
-# Introduction to Networking by Charles Severance.md
+# Introduction to Networking by Charles Severance
 
 ## Fundamentals
 - *Internet* - internetworking of routers and computers
