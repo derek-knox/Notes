@@ -26,3 +26,6 @@
 
 ## Link Layer
 - Each computer (including each router) has a media access control (MAC) address which uniquely identifies it.
+- *gateway* - A router that links a computer's "first hop"
+- *WiFi* - a device emits a packet with its MAC address as the source and a special "broadcast" MAC address as the destination. If a gateway exists, it is listening for the broadcast address and responds with its own MAC address as the source and your MAC address as the destination. This is how the link from a device to a gateway router via WiFi works, the "handshake". The following packets have the actual destination address for data to be sent over the internet.
+- *token* - an alternative to Carrier Sense Multiple Access w/Collision Detection (CSMA/CD) where only one device holds the token, and the sole right to send packets, at a time. The token is passed around so each device has equal opportunity to transmit.
