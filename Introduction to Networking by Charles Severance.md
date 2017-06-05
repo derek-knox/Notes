@@ -23,3 +23,6 @@
   - The destination computer notifies the source computer of what packet's it has recieved. This way, lost packets (blocked by firewalls, certain routes broke, etc.) can be re-sent. Depending on the speed of this source-destination communication, the *window size* (size of source packet) is increased or decreased to ensure, like the link layer, that all computers share the network.
 - *application* - end user interaction interface (world wide web via browser for example)
   - Destination computers (servers) serve data, media, and documents to source computers (clients) that request it. Both servers and clients use an *application protocol* to exchange messages.
+
+## Link Layer
+- Each computer (including each router) has a media access control (MAC) address which uniquely identifies it.
