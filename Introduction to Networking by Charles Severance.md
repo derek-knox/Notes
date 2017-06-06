@@ -6,7 +6,7 @@
   2. LANs are interconnected physically or wirelessly to a create *wide area networks* (WAN)
   3. The interconnection of these WANs results in the internet
 - *Routers* - are specialized computers that quickly route *packet*s of data from a source computer to a destination computer
-  - *packet* - a datum subset accompanied by its source address, destination address, the data length, and the datum's "offset" value. The destination address recombines each datum, in the correct order, to form the complete original data against the data length value.
+  - *packet* - a datum subset accompanied by its source address, destination address, the data length, and the datum's "offset" value. The computer at the destination address recombines each datum, in the correct order, to form the complete original data against the data length value.
 
 ## Network Architecture
 - *Four-Layer TCP/IP Model* - Link > Internetwork > Transport > Application
