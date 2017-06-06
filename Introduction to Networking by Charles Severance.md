@@ -65,3 +65,4 @@
 - Two types of secret keys:
   1. *shared keys* - both client and server know the *shared* key (password)
   2. *asymmetric keys* - the computer that will be receiving the encrypted data determines both the encryption key (public) and the decryption key (private) so the sender can encrypt and send the data where only the receiver can decrypt it
+    - A *certificate authority (CA)* is a trusted source (your browser upon installation knows about) that organizations leverage in signing the public keys they distribute. When packets are sent via HTTPS (using SSL/TLS), if a public key isn't signed by a CA, then the public key shouldn't be trusted as the key isn't actually from the serving computer you expect.
