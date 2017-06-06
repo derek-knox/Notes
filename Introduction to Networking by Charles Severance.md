@@ -58,7 +58,8 @@
   - IMAP (143/220/993) - Mail Retrieval
 
 ## Secure Transport Layer
-- Since the Link/Internetworking/Transport layers were built for effeciency of sending packets, and not securing the data in those packets, the application layer becomes responsible for securing data. Essentially, a client must encrypt data before sending and the server must decrypt the data. For the case of WiFi for example anyone can sit and listen in a coffeeshop for all the various packets that are being sent. They can be read as well, however if the data is encrypted, it can be much more difficult to read the packet data.
+- Since the Link/Internetworking/Transport layers were built for effeciency of sending packets, and not securing the data in those packets, a new partial layer (SSL/TLS) became responsible for securing data. Essentially, a client must opt-in to encrypting data before sending and the server must decrypt the data. For the case of WiFi for example anyone can sit and listen in a coffeeshop for all the various packets that are being sent over the radio waves. The packets can be read as well if the data is not encrypted.
+- The *Secure Sockets Layer (SSL)* or *Transport Layer Security (TLS)* is a partial layer between the Transport layer and the Application layer that adds opt-in security to the Four-Layer TCP/IP Model
 - *encrypt* - encoding plain text to cipher text
 - *decrypt* - decoding cipher text to plain text
 - Two types of secret keys:
