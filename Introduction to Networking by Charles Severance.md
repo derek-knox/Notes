@@ -40,11 +40,27 @@
 - There are five Regional Internet Registries (RIRs) that allocate IP addresses around the world to Internet Service Providers (ISPs) which are responsible for further allocating IP addresses for a given area.
 
 ## Transport Layer
-- Enables server/client applications to work by ensuring packets that arrive out of order are able to be reassembled (via packet offset values). Additionally, packets that never arrive can be resent via messaging between client and server.
-- A server's IP address in conjunction with its port assignments allow a client to access a specific application being served on a computer.
+- Enables client/server applications to work by ensuring packets that arrive out of order are able to be reassembled (via packet offset and length values). Additionally, packets that never arrive can be resent via messaging between client and server. When a client receives packets it sends an acknowledgment (ACK) message notifiying which packets it has received. The transport layer may then remove the temporarily stored packets to free up space.
+- A server's IP address in conjunction with its port assignments allow a client to access a specific application being served on a computer
 
 ## Application Layer
-- 
+- The *HTTP* protocol is how client and server communicate.
+- Headers in the messages between client and server are useful metadata that accompanies the message itself. These are example status code header ranges:
+  - 2xx - success
+  - 3xx - redirecting
+  - 4xx - client did something wrong
+  - 5xx - server did something wrong
+- Common application layer protocols with port mappings:
+  - FTP (21) - File Transfer
+  - SSH (22) - Secure Login
+  - HTTP (80) - World Wide Web
+  - HTTPS (443) - Secure Web
+  - IMAP (143/220/993) - Mail Retrieval
 
 ## Secure Transport Layer
-- 
+- Since the Link/Internetworking/Transport layers were built for effeciency of sending packets, and not securing the data in those packets, the application layer becomes responsible for securing data. Essentially, a client must encrypt data before sending and the server must decrypt the data. For the case of WiFi for example anyone can sit and listen in a coffeeshop for all the various packets that are being sent. They can be read as well, however if the data is encrypted, it can be much more difficult to read the packet data.
+- *encrypt* - encoding plain text to cipher text
+- *decrypt* - decoding cipher text to plain text
+- Two types of secret keys:
+  1. *shared keys* - both client and server know the *shared* key (password)
+  2. *asymmetric keys* - the computer that will be receiving the encrypted data determines both the encryption key (public) and the decryption key (private) so the sender can encrypt and send the data where only the receiver can decrypt it
