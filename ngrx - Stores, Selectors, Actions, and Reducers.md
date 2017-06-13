@@ -1,6 +1,6 @@
-# Rxjs - Stores, Selectors, Actions, and Reducers
+# ngrx - Stores, Selectors, Actions, and Reducers
 
-Rxjs is a system of design patterns for one-way data-flow for SPA/RIA client apps. The system works like this:
+ngrx (redux in Angular) is a system of design patterns for one-way data-flow for SPA/RIA client apps. The system works like this:
 1. A **store** is a client-side observable database, the app model, whose JSON data is initially queried from a server. It is the single source of truth for data.
 2. Components then dependency inject this **store** and leverage a **selector** function to create their respective viewmodel. This viewmodel may identically reflect a **store**’s model, but instead likely combines disparate parts of the **store** to create a custom model (viewmodel). The view then accurately updates and reflects the subset of the **store**’s data.
 3. The **store** may update during runtime. This is where an **action** is used. An **action** is dispatched to communicate that a **store** needs to be updated, most often as a result of a desireable viewmodel change. The view (and any other views) only update after the **store** has updated.
