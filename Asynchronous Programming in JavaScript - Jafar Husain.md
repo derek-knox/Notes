@@ -23,4 +23,4 @@
 ## Observable of Observables Flattening Strategies
 
 - `concatAll` - observable of observables that mitigates race conditions by ensuring async sequence is respected (similar to flattening a 2D array)
-- `takeUntil` - utility for composing a source observable that completes (auto disposes) when a stop observable dispatches 
+- `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`) 
