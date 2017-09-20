@@ -24,3 +24,4 @@
 
 - `concatAll` - observable of observables that mitigates race conditions by ensuring async sequence is respected (similar to flattening a 2D array)
 - `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`) 
+- `mergeAll` - observable of observables like `concatAll` but sequence is ignored in favor of first-come, first-served
