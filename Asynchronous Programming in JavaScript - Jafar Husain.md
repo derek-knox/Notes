@@ -20,6 +20,7 @@
     - `forEach(observer)` - observer's subscribtion/unsubscription hook for update, error, and completion changes
       - `observer = { onNext: updateCb, onError: errorCb, onComplete: completeCb }`
       
-## Observable Operators
+## Observable of Observables Flattening Strategies
 
 - `concatAll` - observable of observables that mitigates race conditions by ensuring async sequence is respected (similar to flattening a 2D array)
+- `takeUntil` - utility for composing a source observable that completes (auto disposes) when a stop observable dispatches 
