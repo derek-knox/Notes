@@ -1,4 +1,4 @@
-# RXJS
+# Asynchronous Programming in JavaScript
 
 - "Everything is a stream" - Rob Wormald (ngrx)
 - "Asynchronous arrays" - Kyle Simpson (Frontend Masters - Deep JS Foundations)
