@@ -1,5 +1,6 @@
 # Asynchronous Programming in JavaScript
 
+## Observable
 - "Everything is a stream" - Rob Wormald (ngrx)
 - "Asynchronous arrays" - Kyle Simpson (Frontend Masters - Deep JS Foundations)
 - "An Observable is like a DOM event that can accept three handlers instead of one" - Jafar Husain (Frontend Masters - Advanced Asynchronous JavaScript)
