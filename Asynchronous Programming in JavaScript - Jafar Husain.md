@@ -1,4 +1,4 @@
-# Asynchronous Programming in JavaScript
+# Asynchronous Programming in JavaScript - Jafar Husain
 
 ## Observable
 - "Everything is a stream" - Rob Wormald (ngrx)
