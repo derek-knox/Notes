@@ -29,4 +29,4 @@
 - `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`)
 - n-dimensional nesting process (same process for Arrays)
   1. `map()` until you have a variable bound to every value you need
-  2. `concatAll()` n-1 nested levels to flatten the desired result
+  2. flatten by n-1 nested levels with `concatAll()`
