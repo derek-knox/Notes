@@ -13,9 +13,9 @@
   - An Observable is capable of denoting update, error, and completion where the typical Observer pattern doesn't have a built-in way for consuming an error or completion. This is the best-of-both worlds aspect that an Observable solves.
 - Observables can model events, async server requests, animations, and data/arrays in a simplified and uniform way, this is the win. Observables push data while providing a mechanism for an observer to pull and consume the changes:
   - push
-    - `onNext(payload)` - observer's update callback
-    - `onError(error)` - observer's error callback
-    - `onComplete()` - observer's complete callback
+    - `next(payload)` - observer's update callback
+    - `error(error)` - observer's error callback
+    - `complete()` - observer's complete callback
   - pull
     - `forEach(observer)` - observer's subscribtion/unsubscription hook for update, error, and completion changes
       - `observer = { onNext: updateCb, onError: errorCb, onComplete: completeCb }`
