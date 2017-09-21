@@ -27,3 +27,6 @@
 - `switchLatest` - observable of observables like `concatAll` where dispatches of observables dispose those prior (replaces state machines)
   - "Instead of building a machine with a bunch of moving parts to compute an answer, we're going to write the answer... were' going to do this declaratively" - Jafar Husain.
 - `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`)
+- n-dimensional nesting process (same process for Arrays)
+  1. `map()` until you have a variable bound to every value you need
+  2. `concatAll()` n-1 nested levels to flatten the desired result
