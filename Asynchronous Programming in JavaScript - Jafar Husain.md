@@ -31,4 +31,4 @@
   1. `map()` until you have an identifier bound to every value you need
   2. flatten by n-1 nested levels with `concatAll()`
 - `concatMap()` n-1 nested with 1 `map()` as last nested operation is the functional version of a nested forEach
-- `zip()` - useful flattening approach acting as a `map()` that merges two arrays together
+- `zip()` - useful flattening approach acting as a `map()` of two arrays at each index
