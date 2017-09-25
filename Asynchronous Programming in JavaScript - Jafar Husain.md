@@ -12,7 +12,7 @@
   - Iterator's *push* (producer)
   - Observer's *pull* (consumer)
   - An Observable is capable of denoting update, error, and completion where the typical Observer pattern doesn't have a built-in way for consuming an error or completion. This is the best-of-both worlds aspect that an Observable solves.
-- Observables can model events, async server requests, animations, and data/arrays in a simplified and uniform way, this is the win. Observables push data while providing a mechanism for an observer to pull and consume the changes:
+- Observables can model events, async server requests, animations, and data/arrays in a simplified and uniform way, this is the win. They enable a unified programming model for transforming any collection. Observables push data while providing a mechanism for an observer to pull and consume the changes:
   - push
     - `next(payload)` - observer's update callback
     - `error(error)` - observer's error callback
