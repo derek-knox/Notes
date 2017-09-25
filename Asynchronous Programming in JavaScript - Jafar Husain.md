@@ -4,9 +4,9 @@
 - "Everything is a stream" - Rob Wormald (ngrx)
 - "Asynchronous arrays" - Kyle Simpson (Frontend Masters - Deep JS Foundations)
 - "An Observable is like a DOM event that can accept three handlers instead of one" - Jafar Husain (Frontend Masters - Asynchronous Programming in JavaScript)
-- Observable - asynchronous collection observed as a stream of changes over time
-  - hot - `forEach` has been called on the observable
-  - cold - `forEach` has not been called on the observable
+- Observable - collection that arrives over time (Observable === Collection + Time)
+  - hot - `forEach` has been called on the observable (being observed)
+  - cold - `forEach` has not been called on the observable (not being observed)
 - Observable leverages the Iterator and Observer pattern to create a best-of-both worlds object:
   - Iterator's *push* (producer)
   - Observer's *pull* (consumer)
