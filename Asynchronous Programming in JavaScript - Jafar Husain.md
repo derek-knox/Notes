@@ -3,8 +3,8 @@
 ## Observable
 The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `concatAll()`, and `zip()` operators is so you can:
 1. code without loops
-    - declarative
-    - functional (manage/mutate less state)
+    - declarative (manage less state)
+    - functional (mutate less state)
 2. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
 3. employ automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
 
