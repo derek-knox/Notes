@@ -41,5 +41,8 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
 - `concatMap()` n-1 nested with 1 `map()` as last nested operation is the functional version of a nested forEach
 - `zip()` - useful flattening approach acting as a `map()` of two arrays at each index (even for len 1 arrays)
 
-## Common Observable Operators
-- `take` - 
+## Additional Helper Operators
+- `take()` - updates n number of times (once by default) and then automatically unsubscribes
+- `takeUntil()` - updates until another observable updates and finally completes
+- `throttle` - delays updates
+- `retry()` - retries on error
