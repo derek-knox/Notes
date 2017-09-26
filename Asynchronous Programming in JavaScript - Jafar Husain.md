@@ -6,7 +6,7 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
   2. code more functionally (manage/mutate less state)
   3. code without loops
   4. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
-  5. gain automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
+  5. employ automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
 
 - Observable quotes:
   - "Everything is a stream" - Rob Wormald (ngrx)
