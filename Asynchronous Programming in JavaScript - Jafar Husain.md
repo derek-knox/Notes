@@ -5,6 +5,12 @@
   - "Everything is a stream" - Rob Wormald (ngrx)
   - "Asynchronous arrays" - Kyle Simpson (Frontend Masters - Deep JS Foundations)
   - "An Observable is like a DOM event that can accept three handlers instead of one" - Jafar Husain (Frontend Masters - Asynchronous Programming in JavaScript)
+- The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `concatAll()`, `concatMap()` operators is so you can:
+  1. code more declaratively
+  2. code more functionally (manage/mutate less state)
+  3. code without loops
+  4. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
+  5. gain automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
 - Observable - collection that arrives over time (Observable === Collection + Time)
   - hot - `forEach` has been called on the observable (being observed)
   - cold - `forEach` has not been called on the observable (not being observed)
