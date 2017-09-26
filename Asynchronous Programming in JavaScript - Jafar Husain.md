@@ -1,12 +1,12 @@
 # Asynchronous Programming in JavaScript - Jafar Husain
 
 ## Observable
-The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `concatAll()`, and `concatMap()` operators is so you can:
-  1. code more declaratively
-  2. code more functionally (manage/mutate less state)
-  3. code without loops
-  4. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
-  5. employ automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
+The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `concatAll()`, and `zip()` operators is so you can:
+1. code without loops
+  - declarative
+  - functional (manage/mutate less state)
+2. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
+3. employ automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
 
 - Observable quotes:
   - "Everything is a stream" - Rob Wormald (ngrx)
