@@ -6,7 +6,9 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
     - declarative (manage less state)
     - functional (mutate less state)
 2. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
-3. employ automatic cleanup to mitigate memory leaks (`take()`/`takeUntil()`)
+3. employ automatic cleanup
+    - mitigate memory leaks (`take()`/`takeUntil()`)
+    - error forwarding
 
 - Observable quotes:
   - "Everything is a stream" - Rob Wormald (ngrx)
