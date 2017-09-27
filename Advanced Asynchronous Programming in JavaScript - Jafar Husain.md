@@ -28,7 +28,7 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
     - `complete()` - observer's complete callback
   - pull
     - `forEach(observer)` - observer's subscribtion/unsubscription hook for update, error, and completion changes
-      - `observer = { onNext: updateCb, onError: errorCb, onComplete: completeCb }`
+      - `observer = { next: onUpdate, error: onError, complete: onComplete }`
       
 ## Observable of Observables Flattening Strategies
 
