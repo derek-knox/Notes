@@ -15,8 +15,8 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
   - "Asynchronous arrays" - Kyle Simpson (Frontend Masters - Deep JS Foundations)
   - "An Observable is like a DOM event that can accept three handlers instead of one" - Jafar Husain (Frontend Masters - Asynchronous Programming in JavaScript)
 - Observable - collection that arrives over time (Observable === Collection + Time)
-  - hot - "different data results based on when subscription occurs"
-  - cold - "no matter how many times you subscribe to it, you always get the same result"
+  - hot - "no matter when you subscribe, you might get different data"
+  - cold - "no matter when you subscribe, you get the same data"
 - Observable leverages the Iterator and Observer pattern to create a best-of-both worlds object:
   - Iterator's *push* (producer)
   - Observer's *pull* (consumer)
