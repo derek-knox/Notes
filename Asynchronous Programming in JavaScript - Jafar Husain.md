@@ -52,3 +52,8 @@ Thought process:
 - `retry()` - retries on error
 - `doAction()` - ensure a synchronous side-effect occurs as part of an observable's `forEach()` execution
  
+## Implementation Process
+1. Think about any change as a collection of changes over time (a stream)
+2. Compose and operate over the stream(s)
+3. Flatten the composition and implement the desired side-effect
+4. Ensure proper cleanup operator is used (if applicable)
