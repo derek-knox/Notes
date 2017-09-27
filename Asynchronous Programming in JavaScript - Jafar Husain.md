@@ -30,19 +30,21 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
       
 ## Observable of Observables Flattening Strategies
 
-- `concatAll` - observable of observables that mitigates race conditions by ensuring async sequence is respected (similar to flattening a 2D array)
-- `mergeAll` - observable of observables like `concatAll` but sequence is ignored in favor of first-come, first-served
-- `switchLatest` - observable of observables like `concatAll` where dispatches of observables dispose those prior (replaces state machines)
+Main three flattening strategies:
+1. `concatAll` - observable of observables that mitigates race conditions by ensuring async sequence is respected (similar to flattening a 2D array)
+2. `mergeAll` - observable of observables like `concatAll` but sequence is ignored in favor of first-come, first-served
+3. `switchLatest` - observable of observables like `concatAll` where dispatches of observables dispose those prior (replaces state machines)
   - "Instead of building a machine with a bunch of moving parts to compute an answer, we're going to write the answer... were' going to do this declaratively" - Jafar Husain.
-- `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`)
+  
+Thought process:
 - n-dimensional nesting process (same process for Arrays)
   1. `map()` until you have an identifier bound to every value you need
-  2. flatten by n-1 nested levels with `concatAll()`
+  2. flatten by n-1 nested levels with (usually `concatAll()`)
 - `concatMap()` n-1 nested with 1 `map()` as last nested operation is the functional version of a nested forEach
 - `zip()` - useful flattening approach acting as a `map()` of two arrays at each index (even for len 1 arrays)
 
 ## Additional Helper Operators
 - `take()` - updates n number of times (once by default) and then automatically unsubscribes
-- `takeUntil()` - updates until another observable updates and finally completes
+- `takeUntil` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`onNext` or `onComplete`)
 - `throttle` - delays updates
 - `retry()` - retries on error
