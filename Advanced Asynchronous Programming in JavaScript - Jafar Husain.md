@@ -5,7 +5,7 @@ The goal of learning about Observable and specifically the `map()`, `filter()`, 
 1. code without loops
     - declarative (manage less state)
     - functional (mutate less state)
-2. abstract the various async APIs into one API (`onNext()`, `onError()`, `onComplete()`)
+2. abstract the various async APIs into one API (`next()`, `error()`, `complete()`)
 3. employ automatic cleanup
     - mitigate memory leaks (`take()`/`takeUntil()`)
     - error forwarding
