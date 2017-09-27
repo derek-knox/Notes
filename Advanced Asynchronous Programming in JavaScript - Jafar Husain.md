@@ -49,7 +49,7 @@ Thought process:
 - `take()` - updates n number of times (once by default) and then automatically unsubscribes
 - `takeUntil()` - composes a source and stop observable where the latter results in exiting the former
 - `throttle()` - delays updates
-- `retry()` - retries n number of times (once by default) on error
+- `retry()` - retries n number of times on error (once by default)
 - `doAction()` - ensure a synchronous side-effect occurs as part of an observable's `forEach()` execution
 - `of()` - converts a value into an observable value
 - `concat()` - concatenate n observables together
