@@ -51,6 +51,10 @@ Thought process:
 - `throttle()` - delays updates
 - `retry()` - retries on error
 - `doAction()` - ensure a synchronous side-effect occurs as part of an observable's `forEach()` execution
+- `of()` - converts a value into an observable value
+- `concat()` - concatenate n observables together
+- `distinctUntilChanged()` - only `next()`s if previous value is not current value
+- `scan()` - like `reduce()`, but emits the intermediate accumulations instead of one accumulated result
  
 ## Implementation Process
 1. Think about any change as a collection of changes over time (a stream)
