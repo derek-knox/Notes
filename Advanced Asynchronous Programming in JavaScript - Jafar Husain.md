@@ -54,6 +54,7 @@ Thought process:
  
 ## Implementation Process
 1. Think about any change as a collection of changes over time (a stream)
-2. Compose and operate over the stream(s)
-3. Flatten the composition and implement the desired side-effect
-4. Ensure proper cleanup operator is used (if applicable)
+2. Abstract it to an Observable
+3. Compose and operate over the stream(s)
+4. Flatten the composition and implement the desired side-effect
+5. Ensure proper cleanup operator is used (if applicable)
