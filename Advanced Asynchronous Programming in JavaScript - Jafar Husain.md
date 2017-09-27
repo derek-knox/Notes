@@ -41,7 +41,7 @@ Main three flattening strategies:
 Thought process:
 - n-dimensional nesting process (same process for Arrays)
   1. `map()` until you have an identifier bound to every value you need
-  2. flatten by n-1 nested levels with (usually `concatAll()`)
+  2. flatten by n-1 nested levels (usually with `concatAll()`)
 - `concatMap()` n-1 nested with 1 `map()` as last nested operation is the functional version of a nested forEach
 - `zip()` - useful flattening approach acting as a `map()` of two arrays at each index (even for len 1 arrays)
 
