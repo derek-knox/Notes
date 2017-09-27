@@ -47,7 +47,7 @@ Thought process:
 
 ## Additional Helper Operators
 - `take()` - updates n number of times (once by default) and then automatically unsubscribes
-- `takeUntil()` - utility for composing a source observable with a stop observable that auto disposes when the stop observable dispatches (`next` or `complete`)
+- `takeUntil()` - composes a source and stop observable where the latter results in exiting the former
 - `throttle()` - delays updates
 - `retry()` - retries on error
 - `doAction()` - ensure a synchronous side-effect occurs as part of an observable's `forEach()` execution
