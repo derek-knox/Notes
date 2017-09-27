@@ -1,7 +1,7 @@
 # Asynchronous Programming in JavaScript - Jafar Husain
 
 ## Observable
-The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `concatAll()`, and `zip()` operators is so you can:
+The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `merge()`, and `zip()` operators is so you can:
 1. code without loops
     - declarative (manage less state)
     - functional (mutate less state)
