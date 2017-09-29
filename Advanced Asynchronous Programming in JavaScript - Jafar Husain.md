@@ -55,6 +55,7 @@ Thought process:
 - `concat()` - concatenate n observables together
 - `distinctUntilChanged()` - only `next()`s if previous value is not current value
 - `scan()` - like `reduce()`, but emits the intermediate accumulations instead of one accumulated result
+- `defer()` - a shortcut wrapper to creating a custom subscribe function
  
 ## Implementation Process
 1. Think about any change as a collection of changes over time (a stream)
