@@ -56,6 +56,7 @@ Thought process:
 - `distinctUntilChanged()` - only `next()`s if previous value is not current value
 - `scan()` - like `reduce()`, but emits the intermediate accumulations instead of one accumulated result
 - `defer()` - a shortcut wrapper to creating a custom subscribe function
+
 Subject (multi-cast observable)
 - `share()` - enables one side effect to trigger many observers
 - `replay()` - enables a side effect cache for late observer consumption
