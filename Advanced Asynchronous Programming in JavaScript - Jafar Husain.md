@@ -56,8 +56,9 @@ Thought process:
 - `distinctUntilChanged()` - only `next()`s if previous value is not current value
 - `scan()` - like `reduce()`, but emits the intermediate accumulations instead of one accumulated result
 - `defer()` - a shortcut wrapper to creating a custom subscribe function
-- `share()` - multi-cast approach using Subject under the hood enabling one side effect to trigger many observers
-- `replay()` - multi-cast approach using Subject under the hood enabling a side effect cache for late observer consumption
+Subject (multi-cast observable)
+- `share()` - enables one side effect to trigger many observers
+- `replay()` - enables a side effect cache for late observer consumption
  
 ## Implementation Process
 1. Think about any change as a collection of changes over time (a stream)
