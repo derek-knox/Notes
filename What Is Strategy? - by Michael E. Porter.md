@@ -1,7 +1,7 @@
 # What Is Strategy? - by Michael E. Porter
 
 ## The Idea in Brief
-- *operational effectiveness* - perform- ing these activities better—that is, faster, or with fewer inputs and defects—than rivals
+- *operational effectiveness* - performing these activities better—that is, faster, or with fewer inputs and defects—than rivals
 - *productivity frontier* - the maximum value a company can deliver at a given cost, given the best available technology, skills, and management techniques
 - *competitive convergence* - the more indistinguishable companies are from one another
 - *strategic positioning* - performing different activities from rivals, or performing similar activities in different ways
