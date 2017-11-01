@@ -43,7 +43,7 @@
 - Strategy is creating fit among a company’s activities
 
 ## Reconnecting with Strategy
-- help a company recon- nect with strategy:
+- help a company reconnect with strategy:
   1. Which of our product or service varieties are the most distinctive?
   2. Which of our product or service varieties are the most profitable?
   3. Which of our customers are the most satisfied?
