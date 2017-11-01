@@ -39,3 +39,15 @@
   2. Second-order fit occurs when activities are reinforcing
   3. Third-order fit goes beyond activity reinforcement to what I call optimization of effort
 - It is harder for a rival to match an array of interlocked activities than it is merely to imitate a particular sales-force approach, match a process technology, or replicate a set of product features. Positions built on systems of activities are far more sustainable than those built on individual activities
+- Strategic positions should have a horizon of a decade or more, not of a single planning cycle
+- Strategy is creating fit among a company’s activities
+
+## Reconnecting with Strategy
+- help a company recon- nect with strategy:
+  1. Which of our product or service varieties are the most distinctive?
+  2. Which of our product or service varieties are the most profitable?
+  3. Which of our customers are the most satisfied?
+  4. Which customers, channels, or purchase occasions are the most profitable?
+  5. Which of the activities in our value chain are the most different and effective?
+- At general management’s core is strategy: defining a company’s position, making trade-offs, and forging fit among activities
+- The leader must provide the discipline to decide which industry changes and customer needs the company will respond to, while avoiding organizational distractions and maintaining the company’s distinctiveness
