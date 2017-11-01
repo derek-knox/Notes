@@ -1,4 +1,4 @@
-# Advanced Asynchronous Programming in JavaScript - Jafar Husain
+# Advanced Asynchronous Programming in JavaScript by Jafar Husain
 
 ## Observable
 The goal of learning about Observable and specifically the `map()`, `filter()`, `reduce()`, `merge()`, and `zip()` operators is so you can:
