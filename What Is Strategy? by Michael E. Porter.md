@@ -25,7 +25,7 @@
   3. *access-based positioning* - segmenting customers who are accessible in different ways
 - if there were only one ideal position, there would be no need for strategy
 
-### Trade-offs
+## Trade-offs
 - trade-offs arise for three reasons:
   1. inconsistencies in image or reputation
   2. activities themselves (inflexibilities in machinery, people, or systems)
@@ -33,7 +33,7 @@
 - Trade-offs are essential to strategy. They create the need for choice and purposefully limit what a company offers
 - The essence of strategy is choosing what *not* to do
 
-### Fit
+## Fit
 - three types of fit:
   1. First-order fit is simple consistency between each activity (function) and the overall strategy
   2. Second-order fit occurs when activities are reinforcing
