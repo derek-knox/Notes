@@ -51,4 +51,4 @@
   5. Which of the activities in our value chain are the most different and effective?
 - At general management’s core is strategy: defining a company’s position, making trade-offs, and forging fit among activities
 - The leader must provide the discipline to decide which industry changes and customer needs the company will respond to, while avoiding organizational distractions and maintaining the company’s distinctiveness
-- One of the leader’s jobs is to teach others in the organi- zation about strategy – and to say no
+- One of the leader’s jobs is to teach others in the organization about strategy – and to say no
