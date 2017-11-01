@@ -38,3 +38,4 @@
   1. First-order fit is simple consistency between each activity (function) and the overall strategy
   2. Second-order fit occurs when activities are reinforcing
   3. Third-order fit goes beyond activity reinforcement to what I call optimization of effort
+- It is harder for a rival to match an array of interlocked activities than it is merely to imitate a particular sales-force approach, match a process technology, or replicate a set of product features. Positions built on systems of activities are far more sustainable than those built on individual activities
