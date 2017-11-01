@@ -18,3 +18,19 @@
 
 ## Other Notes
 - a company can outperform rivals only if it can establish a difference that it can preserve
+- the essence of strategy is choosing to perform activities differently than rivals do
+- positioning can be based on:
+  1. *variety-based positioning* - producing a subset of an industry’s products or services
+  2. *needs-based positioning* - serving most or all the needs of a particular group of customers
+  3. *access-based positioning* - segmenting customers who are accessible in different ways
+- if there were only one ideal position, there would be no need for strategy
+- trade-offs arise for three reasons:
+  1. inconsistencies in image or reputation
+  2. activities themselves (inflexibilities in machinery, people, or systems)
+  3. limits on internal coordination and control
+- Trade-offs are essential to strategy. They create the need for choice and purposefully limit what a company offers
+- The essence of strategy is choosing what *not* to do
+- three types of fit:
+  1. First-order fit is simple consistency between each activity (function) and the overall strategy
+  2. Second-order fit occurs when activities are reinforcing
+  3. Third-order fit goes beyond activity reinforcement to what I call optimization of effort
