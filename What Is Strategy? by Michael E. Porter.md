@@ -1,4 +1,4 @@
-# What Is Strategy? - by Michael E. Porter
+# What Is Strategy? by Michael E. Porter
 
 ## The Idea in Brief
 - *operational effectiveness* - performing activities better—that is, faster, or with fewer inputs and defects—than rivals
