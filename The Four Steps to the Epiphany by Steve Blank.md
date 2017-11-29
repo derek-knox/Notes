@@ -10,9 +10,13 @@ This book provides the linear and cyclical tactial steps and exercises for disco
 ## Four Steps
 ![Four Steps to the Epiphany Breakdown](https://cdn-images-1.medium.com/max/1600/1*wWrwJrlKM2T8z1nQjeQ39Q.png)
 1. Customer Discovery
+    - Document product, market, etc. hypotheses and talk to customers to discover if people have the problem(s) your value proposition solves as spec'd
 2. Customer Validation
+    - Validate enough people have the problem(s) your value proposition solves while ensuring earlyvangelists pay for your offering 
 3. Customer Creation
+    - Gain paying customers and create demand and awareness for your value proposition in the market using strategic excercises and learnings from prior steps
 4. Company Building
+    - Scale people, operations, and processes to faciliate growth
 
 ## Technology Life Cycle Adoption Curve
 ![Image of Technology Life Cycle Adoption Curve](https://upload.wikimedia.org/wikipedia/commons/d/d3/Technology-Adoption-Lifecycle.png)
