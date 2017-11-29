@@ -16,7 +16,7 @@ This book provides the linear and cyclical tactial steps and exercises for disco
 3. Customer Creation
     - Gain paying customers and create demand and awareness for your value proposition in the market using strategic excercises and learnings from prior steps
 4. Company Building
-    - Scale people, operations, and processes to faciliate growth
+    - Reach mainstream customers while scaling people, operations, and processes to faciliate growth
 
 ## Technology Life Cycle Adoption Curve
 ![Image of Technology Life Cycle Adoption Curve](https://upload.wikimedia.org/wikipedia/commons/d/d3/Technology-Adoption-Lifecycle.png)
@@ -34,3 +34,7 @@ The tactics and strategies a startup pursues depends on their product/service ma
 
 ## New Lanchester Strategy
 ![New Lanchester Strategy](http://livedoor.blogimg.jp/isakigyou/imgs/3/a/3a6f6858.png)
+
+## Positioning vs Branding
+- Positioning - everyone knows why your product is better and wants it
+- Branding - everyone knows about your product and thinks your company is wonderful
