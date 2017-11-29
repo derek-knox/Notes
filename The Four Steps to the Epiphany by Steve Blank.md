@@ -24,7 +24,7 @@ The tactics and strategies a startup pursues depends on their product/service ma
 2. Existing market
     - Entering an existing market means greater competition where you compete on features (speed, power, design, etc.). Customers are already educated on the value proposition so communicating feature superiority is of focus. Use the New Lanchester Strategy to inform approach.
 3. Existing market resegmented as low-cost option
-    - Resegmenting an existing market as the low-cost solution. Less competition than going head to head in an existing market where providing a "good enough" solution is of customer interest. Use the New Lanchester Strategy to inform approach.
+    - Resegmenting an existing market as the low-cost solution. Less competition than going head to head in an existing market where providing a "good enough" solution at a low cost is of customer interest. Use the New Lanchester Strategy to inform approach.
 4. Existing market resegmented as niche option
     - Resegmenting an existing market as a niche solution. Less competition than going head to head in an existing market where providing a niche solution is of customer interest. Use the New Lanchester Strategy to inform approach.
 
