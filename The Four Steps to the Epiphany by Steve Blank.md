@@ -13,4 +13,4 @@
 4. Company Building
 
 ## Technology Life Cycle Adoption Curve
-(test)[https://upload.wikimedia.org/wikipedia/commons/d/d3/Technology-Adoption-Lifecycle.png]
+![Image of Technology Life Cycle Adoption Curve](https://upload.wikimedia.org/wikipedia/commons/d/d3/Technology-Adoption-Lifecycle.png)
