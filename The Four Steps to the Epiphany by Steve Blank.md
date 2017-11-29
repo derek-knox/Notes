@@ -38,3 +38,5 @@ The tactics and strategies a startup pursues depends on their product/service ma
 ## Positioning vs Branding
 - Positioning - everyone knows why your product is better and wants it
 - Branding - everyone knows about your product and thinks your company is wonderful
+- "Having a positioning strategy is a prerequisite to branding"
+- Positioning and branding are critical when resegmenting a market and are expensive and deadly in a new market
