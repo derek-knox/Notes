@@ -8,11 +8,9 @@ The Customer Development model works in parallel to the Product Development mode
 This book provides the linear and cyclical tactial steps and exercises for discovering, validating, and creating customers that may sustain the building of a company
 
 ## Four Steps
-Search:
+![Four Steps to the Epiphany Breakdown](https://cdn-images-1.medium.com/max/1600/1*wWrwJrlKM2T8z1nQjeQ39Q.png)
 1. Customer Discovery
 2. Customer Validation
-
-Execution:
 3. Customer Creation
 4. Company Building
 
