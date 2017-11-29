@@ -11,6 +11,7 @@ This book provides the linear and cyclical tactial steps and exercises for disco
 Search:
 1. Customer Discovery
 2. Customer Validation
+
 Execution:
 3. Customer Creation
 4. Company Building
