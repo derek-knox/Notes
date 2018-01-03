@@ -1,4 +1,18 @@
-# ngrx - Stores, Selectors, Actions, and Reducers
+# flux
+
+Flux is a software architecture for one-way data flow that leverages four distinct pieces:
+1. Action
+2. Dispatcher
+3. Store
+4. View
+
+The goal of the Flux architecture is to simplify application state management via:
+- one-way data flow
+- simple mental model
+
+![Flux Diagram](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png "Flux Diagram")
+
+## ngrx - Stores, Selectors, Actions, and Reducers
 
 ngrx (redux in Angular) is a system of design patterns for one-way data-flow for SPA/RIA client apps. The system works like this:
 1. A **store** is a client-side observable database, the app model, whose JSON data is initially queried from a server. It is the single source of truth for data.
