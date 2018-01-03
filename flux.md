@@ -24,7 +24,7 @@ The goal of the Flux architecture is to simplify application state management vi
 
 ## ngrx
 
-- Store > Selector > View > Actions > Reducers > ∞
+- Store > Selector > ViewModel > View > Actions > Reducers > ∞
 
 ngrx (redux in Angular) is a system of design patterns for one-way data-flow for SPA/RIA client apps. The system works like this:
 1. A **store** is a client-side observable database, the app model, whose JSON data is initially queried from a server. It is the single source of truth for data.
