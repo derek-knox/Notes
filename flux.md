@@ -1,6 +1,6 @@
 # flux
 
-*Flux* is a software architecture for one-way data flow that leverages four distinct parts:
+*Flux* is an application architecture for one-way data flow that leverages four distinct parts:
 1. Actions
 2. Dispatchers
 3. Stores
