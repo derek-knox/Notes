@@ -22,7 +22,9 @@ The goal of the Flux architecture is to simplify application state management vi
 2. *State is read-only* - The only way to change the state is to emit an *action*, an object describing what happened.
 3. *Changes are made with pure functions* - To specify how the **state** tree is transformed by **actions**, you write pure **reducer**s.
 
-## ngrx - Stores, Selectors, Actions, and Reducers
+## ngrx
+
+- Store > Selector > View > Actions > Reducers > ∞
 
 ngrx (redux in Angular) is a system of design patterns for one-way data-flow for SPA/RIA client apps. The system works like this:
 1. A **store** is a client-side observable database, the app model, whose JSON data is initially queried from a server. It is the single source of truth for data.
