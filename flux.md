@@ -22,6 +22,10 @@ The goal of the Flux architecture is to simplify application state management vi
 2. *State is read-only* - The only way to change the state is to emit an *action*, an object describing what happened.
 3. *Changes are made with pure functions* - To specify how the **state** tree is transformed by **actions**, you write pure **reducer**s.
 
+## react-redux
+
+*React-redux* has a `<Provider/>` component that wraps the `<App/>` and automatically binds the store reference to each component nested in `<App/>`. A higher order component then uses the `connect()` API to map a concrete component's `props` and actions to the store and dispatcher respectively.
+
 ## ngrx
 
 - Store > Selector > ViewModel > View > Actions > Reducers > ∞
