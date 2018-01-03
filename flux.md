@@ -1,10 +1,10 @@
 # flux
 
-*Flux* is a software architecture for one-way data flow that leverages four distinct pieces:
-1. Action
-2. Dispatcher
-3. Store
-4. View
+*Flux* is a software architecture for one-way data flow that leverages four distinct parts:
+1. Actions
+2. Dispatchers
+3. Stores
+4. Views
 
 The goal of the Flux architecture is to simplify application state management via:
 - one-way data flow
