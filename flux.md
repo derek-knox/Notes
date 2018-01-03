@@ -25,7 +25,7 @@ The goal of the Flux architecture is to simplify application state management vi
 ## react-redux
 
 *React-redux* utilizes two aspects:
-1. one `<Provider/>` component - wraps the `<App/>` and automatically binds the store reference to each component nested in `<App/>`
+1. one `<Provider/>` component - wraps the `<App/>` and automatically binds the store reference to each component nested in `<App/>` (`this.context.store` vs. `this.props`)
 2. `connect()` API - an API for leveraging in a higher order component that maps store values and dispatch actions to a concrete component's `props`
 
 ## ngrx
