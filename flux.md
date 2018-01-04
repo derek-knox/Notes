@@ -10,7 +10,7 @@ The goal of the Flux architecture is to simplify application state management vi
 - one-way data flow
 - simple mental model
 
-![Flux Diagram](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png "Flux Diagram")
+![Flux Flow](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png "Flux Flow")
 
 ## redux
 
@@ -42,14 +42,14 @@ A declarative approach that abstracts async work by leveraging ES6 generators to
 
 ## mobx
 
-*mobx* - ....
-
 Composed of:
 1. Observable state
 2. Actions
 3. Derivations
   - Computed properties
   - Reactions
+  
+![MobX Flow](https://mobx.js.org/docs/flow.png "MobX Flow")
   
 Similar to react-redux, you use a `<Provider storeA={storeA} />` component that wraps a component (`<Application/>` for example) to provide shared state with components. The difference from react-redux is that more than one store is a valid approach. In order for nested components to then leverage a given store, an `@inject` decorator is used resulting in a `this.props.storeA` reference in the component. Where MobX shines is its use of Observable and decorators, namely:
 - `@observable` - wraps a value (literal, object, array, etc) in an Observable
