@@ -53,9 +53,13 @@ Composed of:
   
 Similar to react-redux, you use a `<Provider storeA={storeA} />` component that wraps a component (`<Application/>` for example) to provide shared state with components. The difference from react-redux is that more than one store is a valid approach. In order for nested components to then leverage a given store, an `@inject` decorator is used resulting in a `this.props.storeA` reference in the component. Where MobX shines is its use of Observable and decorators, namely:
 - *Observable state* via `@observable` - wraps a value (literal, object, array, etc) in an Observable
+    - use `@observable` on values that change at runtime
 - *Actions* via `@action` - explicit decoration of a function that modifies state
+    - use `@action` on functions that manipulate an `@observable`
 - *Computed properties* via `@computed` - explicit decoration of a function that computes a value from observables (observable of observables)
+    - use `@computed` on funtions that derive a computed state from two or more `@observable`s
 - *Reactions* via `@observer` - higher-order component pattern so a react component actually rerenders when an observable changes
+    - use `@observer` on a component class whose `@observable`s, `@action`s, or `@computed`s should call a React component's `render()` method
 
 ## ngrx
 
