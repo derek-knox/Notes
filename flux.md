@@ -31,9 +31,12 @@ The goal of the Flux architecture is to simplify application state management vi
 ### redux-thunk
 
 *thunk* - a function that returns a function
+
 An imperative approach that updates redux to understand `dispatch`ed functions as opposed to solely actions. Similar to how a `Promise` abstracts async work, so too does a thunk while additionally normalizing sync and async actions.
 
 ### redux-saga
+
+*saga* - a generator function that can run indefinitely inside the system
 
 A declarative approach that abstracts async work by leveraging ES6 generators to make async code look like sync code. Unlike the redux-thunk approach, redux-sage better lends itself to testing without mocks. A more accurate name for redux-saga could be redux-process-manager.
 
