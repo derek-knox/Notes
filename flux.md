@@ -40,7 +40,7 @@ An imperative approach that updates redux to understand `dispatch`ed functions a
 
 A declarative approach that abstracts async work by leveraging ES6 generators to make async code look like sync code. Unlike the redux-thunk approach, redux-sage better lends itself to testing without mocks. A more accurate name for redux-saga could be redux-process-manager.
 
-## mobx
+## mobx-react
 
 Composed of:
 1. Observable state
