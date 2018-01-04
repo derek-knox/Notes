@@ -46,8 +46,8 @@ Composed of:
 1. Observable state
 2. Actions
 3. Derivations
-  - Computed properties
-  - Reactions
+    - Computed properties
+    - Reactions
   
 ![MobX Flow](https://mobx.js.org/docs/flow.png "MobX Flow")
   
