@@ -28,6 +28,11 @@ The goal of the Flux architecture is to simplify application state management vi
 1. one `<Provider store={store} />` component - wraps the `<App/>` and automatically binds the store reference to each component nested in `<App/>` (via `this.context.store` vs. the commonly used `this.props`/`this.state` references)
 2. `connect()` API - an API for leveraging in a higher order component that maps store values and dispatch actions to a concrete component's `props`
 
+### redux-thunk
+
+*thunk* - a function that returns a function
+Updates redux to understand `dispatch`ed functions as opposed to solely actions. Similar to how a `Promise` abstracts asynchronous work, so too does a thunk while additionally normalizing synchronous and asynchronous actions.
+
 ## ngrx
 
 - Store > Selector > ViewModel > View > Actions > Reducers > ∞
