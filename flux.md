@@ -59,7 +59,7 @@ Similar to react-redux, you use a `<Provider storeA={storeA} />` component that 
 - *Computed properties* via `@computed` - explicit decoration of a function that computes a value from observables (likely implemented as an observable of observables under the hood). Additionally there is a perf win as the computed value is memoized
     - use `@computed` on funtions that derive a computed state from two or more `@observable`s
 - *Reactions* via `@observer` - higher-order component pattern so a react component actually rerenders when an observable changes
-    - use `@observer` on a component class whose `@observable`s, `@action`s, or `@computed`s should call a React component's `render()` method
+    - use `@observer` on a component class whose `@observable`s, `@action`s, or `@computed`s would result in a rerender
 
 ## ngrx
 
