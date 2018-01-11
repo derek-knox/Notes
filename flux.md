@@ -63,10 +63,10 @@ Similar to react-redux, you use a `<Provider storeA={storeA} />` component that 
 
 ## mobx-state-tree
 
-> "React, but for data" - Daniel Earwicker
-
 Philosophy
 > "`mobx-state-tree` is a state container that combines the simplicity and ease of mutable data with the traceability of immutable data and the reactiveness and performance of observable data."
+
+> "React, but for data" - Daniel Earwicker
 
 `mobx` isn't opionated about how data should be structured where `mobx-state-tree` is. With this opionated approach it supports:
 - snapshots and thus timetraveling
