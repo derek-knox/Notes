@@ -69,11 +69,11 @@ Philosophy
 > "React, but for data" - Daniel Earwicker
 
 `mobx` isn't opionated about how data should be structured where `mobx-state-tree` is. With this opionated approach it supports:
-- snapshots and thus timetraveling
-- hot module reloading support
+- snapshots (useful for timetraveling)
+- hot module reloading support (changing app source code functionality in real-time)
+- clone (useful for delaying sync of drafts/edits)
 - replayable actions
 - middleware
-- clone (useful for delaying sync of drafts/edits)
 - classical inheritence via `types.compose`
 
 ## ngrx
