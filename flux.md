@@ -61,6 +61,21 @@ Similar to react-redux, you use a `<Provider storeA={storeA} />` component that 
 - *Reactions* via `@observer` - higher-order component pattern so a react component actually rerenders when an observable changes
     - use `@observer` on a component class whose `@observable`s, `@action`s, or `@computed`s would result in a rerender
 
+## mobx-state-tree
+
+> "React, but for data" - Daniel Earwicker
+
+Philosophy
+> "`mobx-state-tree` is a state container that combines the simplicity and ease of mutable data with the traceability of immutable data and the reactiveness and performance of observable data."
+
+`mobx` isn't opionated about how data should be structured where `mobx-state-tree` is. With this opionated approach it supports:
+- snapshots and thus timetraveling
+- hot module reloading support
+- replayable actions
+- middleware
+- clone (useful for delaying sync of drafts/edits)
+- classical inheritence via `types.compose`
+
 ## ngrx
 
 - Store > Selector > ViewModel > View > Actions > Reducers > ∞
