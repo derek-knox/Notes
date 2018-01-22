@@ -61,7 +61,9 @@ Similar to react-redux, you use a `<Provider storeA={storeA} />` component that 
 - *Reactions* via `@observer` - higher-order component pattern so a react component actually rerenders when an observable changes
     - use `@observer` on a component class whose `@observable`s, `@action`s, or `@computed`s would result in a rerender
 
-"MobX reacts to any an existing observable property that is read during the execution of a tracked function."
+Additional Notes:
+- "MobX reacts to any an existing observable property that is read during the execution of a tracked function."
+- Use a `transaction` if editing many observables at once where you know you only want an "update" to occur after all thed observable edits have been made. MobX uses this internally, but is useful depending on your use case.
 
 ## mobx-state-tree
 
