@@ -1,6 +1,6 @@
 # MobX Source Code Summary
 
-An useful interactive application relies on two core aspects:
+An interactive application relies on two core aspects:
 1. state
 2. state changes
 
