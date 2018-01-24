@@ -5,9 +5,9 @@ An interactive program relies on two core aspects:
 2. state changes
 
 MobX is a state management library that simplifies interactive application programming and maintenance while increasing developer productivity. MobX works based upon three fundamental concepts (link to tweet TODO):
-1. Derivation - derives state
-2. Observable - tracks state
-3. Reaction - changes state
+1. Derivations - derive state
+2. Observables - track state
+3. Reactions - change state
 
 ## Derivation
 
