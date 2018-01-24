@@ -17,7 +17,9 @@ A derivation is anything that can be derived from the state in a pure manner. Th
 2. `@computed`/`computed()`
     - Use computed for everything else (deriving new values from recently changed values).
 
-`autorun` kicks off a `Reaction` object that `schedule()`s itself to first update the `globalState.pendingReactions` followed by a `runReactions()` call.
+Autorun kicks off a `Reaction` object that `schedule()`s itself to first update the `globalState.pendingReactions` followed by a `runReactions()` call. Observe...
+
+Computed...
 
 ## Observable
 
