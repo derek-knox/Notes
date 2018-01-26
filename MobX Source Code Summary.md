@@ -11,7 +11,7 @@ MobX is a state management library that simplifies interactive application progr
 
 ## Derivation
 
-A derivation is anything that can be derived from the state in a pure manner. The state is fundamentally composed of all the `Observable`s (`BaseAtom`s under the hood) being tracked in a program. `Observable`s are *observed* and cause *reactions* via:
+A derivation is anything that can be derived from the state in a pure manner. The state is fundamentally composed of all the `Observable`s (`BaseAtom`s under the hood) being tracked in a program. `Observable`s are *observed* where these observable changes are triggered via *reactions*:
 1. `autorun` and `@observe`/`observe()`
     - Use autorun if you have a function that should run automatically but that doesn't result in a new value (side effect of rerendering for example).
 2. `@computed`/`computed()`
