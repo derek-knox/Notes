@@ -12,6 +12,11 @@ Acronyms
 - SDR - sales development representative
 - AE - account executive
 - AM - account manager
+- ACV - average or annual contract value
+- SMB - small and medium sized businesses
+- ARR — annually recurring revenue
+- LTV - lifetime value
+- ARPU - average revenue per user
 
 ## SaaS Models
 
@@ -35,3 +40,13 @@ Acronyms
   - SDRs find prospects
   - AEs own the sales processs against particular customers
   - AMs own happiness and performance of an individualized portfolio of accounts
+- example business:
+    - Salesforce
+    
+## SaaS Fundamentals
+
+- "one’s revenue, over the long term, is the number of customers times the average lifetime revenue per customer"
+    - # of customers = acquisition * conversion rate
+    - churn = % of customers over a given period who do not continue payment
+    - LTV = how much $ paid in a particular period and how many periods they persist using the service
+        - LTV generally = inverse of churn (5% churn/mo means 20mo lifetime @$30/mo means LTV of $600)
