@@ -46,7 +46,7 @@ Acronyms
 ## SaaS Fundamentals
 
 - "one’s revenue, over the long term, is the number of customers times the average lifetime revenue per customer"
-    - # of customers = acquisition * conversion rate
-    - churn = % of customers over a given period who do not continue payment
-    - LTV = how much $ paid in a particular period and how many periods they persist using the service
-        - LTV generally = inverse of churn (5% churn/mo means 20mo lifetime @$30/mo means LTV of $600)
+    - `#` of customers `=` acquisition `*` conversion rate
+    - churn `=` % of customers over a given period who do not continue payment
+    - LTV `=` how much $ paid in a particular period and how many periods they persist using the service
+        - LTV generally `=` inverse of churn (5% churn/mo means 20mo lifetime @$30/mo means LTV of $600)
