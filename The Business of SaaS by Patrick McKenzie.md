@@ -17,6 +17,7 @@ Acronyms
 - ARR — annually recurring revenue
 - LTV - lifetime value
 - ARPU - average revenue per user
+- LVR - lead velocity rate
 
 ## SaaS Models
 
