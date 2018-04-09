@@ -90,7 +90,7 @@ Implementation
 - The `type.identifier()` and `types.reference` APIs are a simple and powerful way to prevent duplicate data while ensuring MST automatically resolves references with what would otherwise be solved with repetitive boilerplate (for each model needing this behavior identified).
 - `types.model` has various useful lifecycle hooks like `afterCreate`, `preProcessSnapshot`, and `beforeDestroy`.
     - The `afterCreate` lifecycle hook is great in coordination with `onSnapshot` to auto save when changes happen to a particular model snapshot.
-- The `types.compose` API is useful for composing models, actions, and views defined individually. This is useful for larger applications that may want to share/reuse actions and views with various models.
+- The `types.compose` API is useful for composing models, actions, and views defined individually. This is useful for applications that may want to share/reuse actions and views with various models. Additionally, this approach is useful for providing models with generic actions functionality (shared fetch and error handling for example).
 
 ## ngrx
 
