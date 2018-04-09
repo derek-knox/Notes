@@ -88,6 +88,7 @@ Implementation
 - `types.literal` and `types.union` are powerful was to define types in MST.
 - The `flow` API abstracts async work as asynchronous actions.
 - The `type.identifier()` and `types.reference` APIs are a simple and powerful way to prevent duplicate data while ensuring MST automatically resolves references with what would otherwise be solved with repetitive boilerplate (for each model needing this behavior identified).
+- `types.model` has various useful lifecycle hooks like `afterCreate`, `preProcessSnapshot`, and `beforeDestroy`.
 
 ## ngrx
 
