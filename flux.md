@@ -83,7 +83,7 @@ Philosophy
 Implementation
 - MST leverages typed models via `types.model({...})` with actions for changing read-only model data via `types.actions({...})`. The actions mutate model data, but MobX with MST ensures immutable copies or "Snapshots" are preserved automatically. This enables the above features like timetraveling and undo/redo via "Patches".
 - Creating models is done via the `MyModel.create({...})` API.
-- Derive data from existing state, don't duplicate data (ex. fullName as derivation of firstName and lastName). In MST this is done via `types.views({...})` which are observable read-only MobX `@computed` values which are memoized for effeciency.
+- Derive data from existing state, don't duplicate data (ex. fullName as derivation of firstName and lastName). In MST this is done via `types.views({...})` which are observable read-only MobX `@computed` values which are memoized.
 
 ## ngrx
 
