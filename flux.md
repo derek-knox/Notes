@@ -80,6 +80,9 @@ Philosophy
 - middleware
 - classical inheritence via `types.compose`
 
+Implementation
+- MST leverages typed models via `types.model({...})` with actions for changing read-only model data via `types.model({...}).actions({...})`. The actions mutate model data, but MobX with MST ensures immutable copies or "Snapshots" are preserved automatically. This enables the above features like timetraveling. Creating models is done via the `MyModel.create({...})` API.
+
 ## ngrx
 
 - Store > Selector > ViewModel > View > Actions > Reducers > ∞
