@@ -89,6 +89,7 @@ Implementation
 - The `flow` API abstracts async work as asynchronous actions.
 - The `type.identifier()` and `types.reference` APIs are a simple and powerful way to prevent duplicate data while ensuring MST automatically resolves references with what would otherwise be solved with repetitive boilerplate (for each model needing this behavior identified).
 - `types.model` has various useful lifecycle hooks like `afterCreate`, `preProcessSnapshot`, and `beforeDestroy`.
+    - The `afterCreate` lifecycle hook is great in coordination with `onSnapshot` to auto save when changes happen to a particular model snapshot.
 
 ## ngrx
 
