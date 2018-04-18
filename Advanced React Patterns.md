@@ -13,4 +13,16 @@
 
 # Flexible Compound Component
 
-
+- a variation on the Compound Component pattern where React's context API is leveraged so all sub components do not need to be adjacent
+- static property sub components are wrapped (`<ToggleContext.Consumer>...</ToggleContext.Consumer>`)
+- the root component is now wrapped (`<ToggleContext.Provider>...</ToggleContext.Provider>`)
+- example:
+```
+<Toggle on={onToggle}>
+  <Toggle.On>The button is on</Toggle.On>
+  <Toggle.Off>The button is off</Toggle.Off>
+  <div>
+    <Toggle.Button></Toggle.Button>
+  </div>
+</Toggle>
+```
