@@ -10,3 +10,7 @@
   <Toggle.Button></Toggle.Button>
 </Toggle>
 ```
+
+# Flexible Compound Component
+
+
