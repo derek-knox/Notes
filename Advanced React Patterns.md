@@ -28,3 +28,9 @@ An approach for sharing state between 2+ components where the user of the compon
   </div>
 </Toggle>
 ```
+
+# Render Prop Component
+
+- 
+
+
