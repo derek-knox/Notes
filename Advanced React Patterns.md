@@ -1,5 +1,7 @@
 # Compound Component
 
+An approach for sharing state between 2+ components where the user of the component does not need to know about that internal state
+
 - leverages `static` properties (`On`, `Off`, and `Button` below) for rendering sub (or compound) components of the root component
 - the root component's `Render` function leverages `React.Children.map` and `React.CloneElement` to provide the root component state to its sub component children (for conditional rendering)
 - example:
