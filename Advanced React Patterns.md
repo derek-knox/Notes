@@ -31,7 +31,9 @@ An approach for sharing state between 2+ components where the user of the compon
 
 # Render Prop Component
 
-- an approach for giving the user of a component the rendering ability
+- an approach for giving the user of a component rendering control
+- a technique for sharing code between React components using a prop whose value is a function
+- a render prop is a function prop that a component uses to know what to render
 
 ```
 <Toggle onToggle={onToggle}>
@@ -47,5 +49,7 @@ An approach for sharing state between 2+ components where the user of the compon
   )}
 </Toggle>
 ```
+
+- Since the `children` prop (sometimes used as `render`) is implied, its value can instead be placed directly as a child (like the example above). This is preferred to placing the function as the value to a `children` or `render` property.
 
 
