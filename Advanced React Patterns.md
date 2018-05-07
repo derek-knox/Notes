@@ -53,3 +53,12 @@ An approach for sharing state between 2+ components where the user of the compon
 - Since the `children` prop (sometimes used as `render`) is implied, its value can instead be placed directly as a child (like the example above). This is preferred to placing the function as the value to a `children` or `render` property.
 - The *Prop Getters* pattern is useful with Render Props to enable multiple functions to be called for the same action (as opposed to getting overridden). For example an `onClick` could be used internally to the component but also for the user of the component.
 
+# State Initializer
+
+- an approach for initialiing state but also providing a mechanism for restting a component to its initial state
+  - simply cache an `initialState` object and provide a way to trigger restting the state to `initialState`
+  - when first initializing, simply leverage the passed in initialState props but fallback to the `initialState` for values not passed in
+  
+# State Reducer
+
+- 
