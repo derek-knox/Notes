@@ -40,7 +40,7 @@ An approach for sharing state between 2+ components where the user of the compon
   {({on, toggle}) => (
     <div>
       {on ? 'The button is on' : 'The button is off'}
-      <Switch on={on} onClick={toggle}
+      <Switch on={on} onClick={toggle} />
       <hr/>
       <button aria-label='custom-button' onClick={toggle}>
         {on ? 'On' : 'Off'}
