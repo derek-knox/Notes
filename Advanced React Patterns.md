@@ -5,7 +5,7 @@ An approach for sharing state between 2+ components where the user of the compon
 - leverages `static` properties (`On`, `Off`, and `Button` below) for rendering sub (or compound) components of the root component
 - the root component's `Render` function leverages `React.Children.map` and `React.CloneElement` to provide the root component state to its sub component children (for conditional rendering)
 - example:
-```
+```javascript
 <Toggle on={onToggle}>
   <Toggle.On>The button is on</Toggle.On>
   <Toggle.Off>The button is off</Toggle.Off>
@@ -19,7 +19,7 @@ An approach for sharing state between 2+ components where the user of the compon
 - static property sub components are wrapped (`<ToggleContext.Consumer>...</ToggleContext.Consumer>`)
 - the root component is now wrapped (`<ToggleContext.Provider>...</ToggleContext.Provider>`)
 - example:
-```
+```javascript
 <Toggle on={onToggle}>
   <Toggle.On>The button is on</Toggle.On>
   <Toggle.Off>The button is off</Toggle.Off>
@@ -35,7 +35,7 @@ An approach for sharing state between 2+ components where the user of the compon
 - a technique for sharing code between React components using a prop whose value is a function
 - a render prop is a function prop that a component uses to know what to render
 
-```
+```javascript
 <Toggle onToggle={onToggle}>
   {({on, toggle}) => (
     <div>
