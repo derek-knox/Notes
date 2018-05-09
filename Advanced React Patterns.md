@@ -62,3 +62,7 @@ An approach for sharing state between 2+ components where the user of the compon
 # Provider 
 
 - an approach for mitigating "prop drilling" (passing props multiple levels just so a deep component can consume shared state) that leverages a context (shared state), provider (wrapper component), and consumer (any nested component desiring to consume the context shared state)
+
+# HOC (Higher Order Component)
+
+- a function that takes arguments (object, component, etc.) and then returns a new component using the arguments (Render Props are used in the newly returned component)
