@@ -66,4 +66,4 @@ An approach for sharing state between 2+ components where the user of the compon
 # HOC (Higher Order Component)
 
 - a function that takes arguments (object, component, etc.) and then returns a new component using the arguments (Render Props are used in the newly returned component)
-- a common naming convention for this pattern is `withX()` as in `withTheme()` and `withStorage`
+- a common naming convention for this pattern is `withX()` as in `withTheme()` and `withStorage()`
