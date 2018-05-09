@@ -55,7 +55,7 @@ An approach for sharing state between 2+ components where the user of the compon
 
 # State Initializer
 
-- an approach for initialiing state but also providing a mechanism for restting a component to its initial state
+- an approach for initialiing state but also providing a mechanism for resetting a component to its initial state
   - simply cache an `initialState` object and provide a way to trigger restting the state to `initialState`
   - when first initializing, simply leverage the passed in initialState props but fallback to the `initialState` for values not passed in
 
