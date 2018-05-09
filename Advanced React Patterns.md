@@ -61,4 +61,4 @@ An approach for sharing state between 2+ components where the user of the compon
 
 # Provider 
 
-- an approach for mitigating "prop drilling" (passing props multiple levels just so a deep component can consume shared state) that leverages a context (shared state), provider (wrapper component), and consumer (any nested component desiring to consume the context shared state) API
+- an approach for mitigating "prop drilling" (passing props multiple levels just so a deep component can consume shared state) that leverages a context (shared state), provider (wrapper component), and consumer (any nested component desiring to consume the context shared state)
