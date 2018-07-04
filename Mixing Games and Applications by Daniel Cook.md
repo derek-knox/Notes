@@ -54,3 +54,7 @@
         - Emergent (emerge from pre-existing and reward)
     - Elder Game (emergent skills through minimal mediation)
     - Advancement Game (learning basics through heavier mediation)
+
+## Summary
+
+- Be intentional about what the goals are, when to introduce functionality, and to empower users through emergent skill acquisition.
