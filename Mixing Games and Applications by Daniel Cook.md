@@ -57,4 +57,4 @@
 
 ## Summary
 
-- Be intentional about what the goals are, when to introduce functionality, and to empower users through emergent skill acquisition.
+- Be intentional and explicit about what the goals are, when to introduce functionality that enables skill acquisition, and to empower users through emergent skill acquisition.
