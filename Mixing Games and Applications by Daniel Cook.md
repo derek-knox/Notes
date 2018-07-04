@@ -3,7 +3,7 @@
 - Games provide small challenges with subtle hints. Users achieve the aha moment (dopamine rush) and feel self accomplished. This is why games are fun, the aha and sense of accomplishment.
 
 ## Exploratory Learning
-- STARS (skils atom or STARS atom)
+- STARS (skills atom or STARS atom)
     - Skills
     - Tools & Actions
     - Rules
