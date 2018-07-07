@@ -33,7 +33,7 @@
     * Needed for task at hand are easily accessible
 
 - Quests (aka explicit goals)
-    - By explicitly explicitly offering offering the goal, you alert the player that something is possible.
+    - By explicitly explicitly offering the goal, you alert the player that something is possible.
     - The goal gives them something to measure their incremental progress towards.  
     - We are bred to complete activities. If we don’t, our brains end up churning away on them...
     - Finishing a cognitive loop so that it can be packaged away as a nice neat mental model again gives a distinct feeling of relief and pleasure.
