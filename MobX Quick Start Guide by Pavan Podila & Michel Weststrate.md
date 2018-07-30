@@ -74,3 +74,14 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
       document.getElementById('root'),
   );
   ```
+
+## Crafting the Observable Tree
+
+- The `@observable` is shorthand for `@observable.deep` where deep observation stops at objects with a constructor or prototype (as they're expected to then have their own `observable` properties)
+- `@observable.shallow` is most useful for arrays and maps where only the length/size, additions, and removals are of side-effect interest
+- `@observable.ref` is useful if only the value assigned (and not data in the structure itself) is of side-effect interest
+- `@observable.struct` tracks property values vs property reference to validate side-effect execution
+  - `{ x: 0, y: 0 }` and `{ x: 0, y: 0 }` are two distinct objects, but they're structurally the same
+- The `extendObservable()` API allows runtime property additions to preexisting `observable`s
+  - `extendObservable({}, object) === observable.object() === observable()` so `extendObservable` is the superset
+  - `extendObservable` is required if dynamically adding `action`s or `computed`s is required as `observable` map can only track dynamically added/removed state carrying properties
