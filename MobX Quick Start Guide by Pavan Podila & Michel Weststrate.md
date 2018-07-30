@@ -33,3 +33,6 @@ Observable types (`observable()` is shorthand and automatically using the below 
 - primitives, functions, class-instances: `observable.box(value)`
 
 *MobX applies deep observability (every property at every level of an object-tree, array, or map including additions/removals fo arrays and maps)*
+
+Computed `observable`s are automatically tracked `observable`s where it *devives its value* from other `observable`s. This ensures the explicitly tracked state is minimal where combinations of existing `observable` state can be *derived*, thus producing these computed `observable`s (aka *derivations*).
+  - An example computed `observable` could be `fullName` where only the `firstName` and `lastName` `observable`s explicitly are tracked.
