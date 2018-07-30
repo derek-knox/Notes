@@ -2,7 +2,7 @@
 
 ## Introduction to State Management
 
-MobX is a reactive uni-directional state management library with an elegant and small API.
+MobX is a reactive state management library with uni-directional data flow and an elegant and small API.
 - UI = `fn(state)`
 - VirtualDOM = `fn(props, state)`
 
