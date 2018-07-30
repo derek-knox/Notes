@@ -53,7 +53,7 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - `autorun()` - runs the passed *tracking function* immediately and on every change to its dependent `observable`s
 - `reaction()` - takes a *tracking function* like `autorun()` but waits for changes in its `observable`s and compares the result against the previous *tracking function*'s return value. If different, an *effect function* runs. This is a more optimized and finer controlled run side-effect.
   - `mobx-react`'s `observer()` function enables a React component's `render()` to be the *effect function* of a `reaction()`.
-- `when()` - executes the *effect-function* only when its *predicate function* returns true, it then automatically disposes the side-effect
+- `when()` - when its *predicate function* returns true, it executes the *effect-function* and then automatically disposes the side-effect
 
 *The `autorun()`, `reaction()`, and `when()` functions return a *disposer function* for manual cancellation of the side-effect*
 
