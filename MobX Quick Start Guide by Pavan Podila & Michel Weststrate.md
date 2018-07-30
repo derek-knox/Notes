@@ -20,6 +20,7 @@ MobX Use
 
 ## Observables, Actions, and Reactions
 
+### Observables
 `Observable` objects only track the properties provided in the initial value given. You need to use *observable maps* for dynamic property tracking. Additionally, tracking JavaScript primitives require *box*ing though explicitly doing so is rare.
   - `observable map` - 
   - `observable.box()` - convert primitive values into an observable
@@ -40,3 +41,7 @@ Computed `observable`s are automatically tracked `observable`s where it *devives
   - Nested computeds work too where MobX internally builds an optimized dependency tree with proper caches via memoization unlike JavaScript's eagerly evaluated `get` properties
   
   *The `@decorator` sytnax (`@observable`, `@computed`, & `@action`) can be used in MobX with JavaScript classes vs the function API for more succint authoring*
+
+### Actions
+Actions provide declarative names (function names decorated w/`@action`) to the operations that mutate state.
+  - Using `action`s boosts performance as it acts as an *atomic transaction* (all `observable`s within the `action` fire their change events upon the `action`s completion vs incrementally line-by-line)
