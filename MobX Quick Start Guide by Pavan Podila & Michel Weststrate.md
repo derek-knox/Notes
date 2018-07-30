@@ -24,7 +24,7 @@ MobX Use
   - `observable map` - 
   - `observable.box()` - convert primitive values into an observable
   
-Observable types:
+Observable types (`observable()` is shorthand and automatically using the below APIs):
 - objects: `observable.object({})`
 - arrays: `observable.array([])`
 - maps: `observable.object(value)`
