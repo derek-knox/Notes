@@ -45,3 +45,14 @@ Computed `observable`s are automatically tracked `observable`s where it *devives
 ### Actions
 Actions provide declarative names (function names decorated w/`@action`) to the operations that mutate state.
   - Using `action`s boosts performance as it acts as an *atomic transaction* (all `observable`s within the `action` fire their change events upon the `action`s completion vs incrementally line-by-line)
+  - Use the `configure()` function to set `enforeActions` option to true so MobX throws an error if you mutate an `observable` outside of an `action`
+  - `@action.bound` pre-binds the `this` to the class instance
+
+### Reactions
+*Reaction*s are the side-effect causing behaviors of `observable` changes. They are expressed via:
+- `autorun()` - runs the passed *tracking function* immediately and on every change to its dependent `observable`s
+- `reaction()` - takes a *tracking function* like `autorun()` but waits for changes in its `observable`s and compares the result against the previous *tracking function*'s return value. If different, an *effect function* runs. This is a more optimized and finer controlled run side-effect.
+  - `mobx-react`'s `observer()` function enables a React component's `render()` to be the *effect function* of a `reaction()`.
+- `when()` - executes the *effect-function* only when its *predicate function* returns true, it then automatically disposes the side-effect
+*  - `autorun()`, `reaction()`, and `when()` return a *disposer function* for manual canceling of the side-effect*
+
