@@ -27,5 +27,5 @@ MobX Use
 Observable types (`observable()` is shorthand and automatically using the below APIs):
 - objects: `observable.object({})`
 - arrays: `observable.array([])`
-- maps: `observable.object(value)`
-- primitives, functions, class-instances: `observable.object(value)`
+- maps: `observable.map(value)`
+- primitives, functions, class-instances: `observable.box(value)`
