@@ -58,3 +58,8 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   
 *The `autorun()`, `reaction()`, and `when()` functions return a *disposer function* for manual cancellation of the side-effect*
 
+## A React App with MobX
+
+- `runInAction()` is a utility function useful for the result of an `async` operation to be used for updating `observable`s
+- `flow()` is another utility function but is an alternative to `runInAction()` that takes a `generator` function whose mutations following `yield` are automatically wrapped with `action()`
+- `observer()` of `mobx-react` creates a *higher-order-component (HOC)* when wrapping a React component. Internally, `observer()` keeps track of the component's dependent `observable`s and calls the component's `render` method when any of them changes.
