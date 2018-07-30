@@ -55,5 +55,5 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   - `mobx-react`'s `observer()` function enables a React component's `render()` to be the *effect function* of a `reaction()`.
 - `when()` - executes the *effect-function* only when its *predicate function* returns true, it then automatically disposes the side-effect
 
-*`autorun()`, `reaction()`, and `when()` return a *disposer function* for manual canceling of the side-effect*
+*The `autorun()`, `reaction()`, and `when()` functions return a *disposer function* for manual cancellation of the side-effect*
 
