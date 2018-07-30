@@ -65,6 +65,7 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - `observer()` of `mobx-react` creates a *higher-order-component (HOC)* when wrapping a React component. Internally, `observer()` keeps track of the component's dependent `observable`s and calls the component's `render` method when any of them changes.
   - It's best practice to start out with a monolithic component and once working, gradually decompose it into other `observer` sub-components. This ensures only specific sub-components are rerendered as opposed to the entire monolithic component. MobX already granularly is tracking the `observable`s and thus can ensure React only rerenders the sub-component that truly has changed.
 - `@inject` of `mobx-react` is how you bind a specific `observable` store to a React component
+  - `Provider` of `mobx-react` is how you bind stores to your entire React application
   ```
   ReactDOM.render(
       <Provider store={store}>
