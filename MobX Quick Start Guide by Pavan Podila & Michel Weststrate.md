@@ -30,4 +30,4 @@ Observable types (`observable()` is shorthand and automatically using the below 
 - maps: `observable.map(value)`
 - primitives, functions, class-instances: `observable.box(value)`
 
-*MobX applies deep observability (every property at every level of an object-tree, array, or map including additions/removals fo arrays and maps)
+*MobX applies deep observability (every property at every level of an object-tree, array, or map including additions/removals fo arrays and maps)*
