@@ -13,6 +13,6 @@ State Changes
 MobX Use
 - `observable` - function that wraps any data and automatically wires up change tracking on its properties
 - `observer` - a listener of `observable` changes
-  - `autorun` - an API accepting a *tracking function* that autoruns when any of its nested observables changes
-  - `reaction` - 
-  - `when` - 
+  1. `autorun` - an API accepting a *tracking function* that autoruns when any of its nested observables changes
+  1. `reaction` - 
+  1. `when` - 
