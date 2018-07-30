@@ -85,3 +85,6 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - The `extendObservable()` API allows runtime property additions to preexisting `observable`s
   - `extendObservable({}, object) === observable.object() === observable()` so `extendObservable` is the superset
   - `extendObservable` is required if dynamically adding `action`s or `computed`s is required as `observable` map can only track dynamically added/removed state carrying properties
+- Caching and automatic clean-up (GC) are the main reasons MobX recommends liberal usage of `computed`s
+
+*Observable State = Core State + Derived State*
