@@ -20,7 +20,7 @@ MobX Use
 
 ## Observables, Actions, and Reactions
 
-`Observable` objects only track the properties provided in the initial value given. You need to use *observable maps* for dynamic property tracking. Additionally, tracking JavaScript primitives require *box*ing.
+`Observable` objects only track the properties provided in the initial value given. You need to use *observable maps* for dynamic property tracking. Additionally, tracking JavaScript primitives require *box*ing though explicitly doing so is rare.
   - `observable map` - 
   - `observable.box()` - convert primitive values into an observable
   
@@ -29,3 +29,5 @@ Observable types (`observable()` is shorthand and automatically using the below 
 - arrays: `observable.array([])`
 - maps: `observable.map(value)`
 - primitives, functions, class-instances: `observable.box(value)`
+
+*MobX applies deep observability (every property at every level of an object-tree, array, or map including additions/removals fo arrays and maps)
