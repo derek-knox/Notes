@@ -102,9 +102,21 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   - nested actions ensure notifications only go out after outermost action execution completes
 - the `runInAction()` utility ensures `async`/`await` accounts for `observable` mutations properly
 - the `flow()` utility is useful if multiple `await`s become a PIA
+  - MobX provides a `cancel()` API to quit the `flow`
+  
+### Reactions
+- `autorun()` & `reaction()` can take a second arg `options` object
+  - `delay` option - acts as a debouncer for frequent changing `observable`s
 
-
+MobX Reaction Rules:
+- Always dereference (read) observables during the execution of the *tracking-function*. Dereferencing is the key to establishing the MobX tracker.
+  - MobX needs an `observable` property to be synchronously read inside the *tracking-function* to react
+- Tracking only happens in the synchronously executing code of the *tracking-function*
+- Only observables that already exist will be tracked
+- One exception to the previous rule is for `observable map`s where a dynamic key is also tracked
+  - MobX 5 can track *not-yet-existing* properties for all objects created using the `observable()` API
 _______
 Questions:
-- for `autorun` how is MobX parsing/reading/tracking observables inside the function so it can then determine a change and reexecute the fn?
-- what explicitly happens when an object is wrapped via `@observable`?
+- How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
+  - "...autorun() implicitly selects all observables in its effect-function" - How?
+- what explicitly happens when an object is wrapped via `@observable`? (custom get/set I believe)
