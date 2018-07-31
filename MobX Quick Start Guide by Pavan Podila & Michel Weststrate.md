@@ -110,9 +110,8 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 
 MobX Reaction Rules:
 - Always dereference (read) observables during the execution of the *tracking-function*. Dereferencing is the key to establishing the MobX tracker.
-  - MobX needs an `observable` property to be synchronously read inside the *tracking-function* to react
 - Tracking only happens in the synchronously executing code of the *tracking-function*
-- Only observables that already exist will be tracked
+- Only `observable`s that already exist will be tracked
 - One exception to the previous rule is for `observable map`s where a dynamic key is also tracked
   - MobX 5 can track *not-yet-existing* properties for all objects created using the `observable()` API
 _______
