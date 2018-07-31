@@ -108,12 +108,24 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - `autorun()` & `reaction()` can take a second arg `options` object
   - `delay` option - acts as a debouncer for frequent changing `observable`s
 
-MobX Reaction Rules:
+### MobX Reaction Rules:
 - Always dereference (read) observables during the execution of the *tracking-function*. Dereferencing is the key to establishing the MobX tracker.
 - Tracking only happens in the synchronously executing code of the *tracking-function*
 - Only `observable`s that already exist will be tracked
 - One exception to the previous rule is for `observable map`s where a dynamic key is also tracked
   - MobX 5 can track *not-yet-existing* properties for all objects created using the `observable()` API
+  
+## Handling Real-World Use Cases
+
+- React components that are `@observer`s read the `@observable`s in the `render()` to set up tracking. Changes to an `@observable` results in a re-`render()`
+- `mobx-react`'s `<Observer>` component is a declarative shortcut to manually creating a React component class that uses `@observer`, `@inject`, and consumes `@observable`s as `props` in the `render()` function
+  
+## Special API for Special Cases
+
+...
+  
+  
+  
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
