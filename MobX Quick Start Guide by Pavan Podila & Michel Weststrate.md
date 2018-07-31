@@ -87,8 +87,23 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   - `extendObservable` is required if dynamically adding `action`s or `computed`s is required as `observable` map can only track dynamically added/removed state carrying properties
 - Caching and automatic clean-up (GC) are the main reasons MobX recommends liberal usage of `computed`s
 
-*Observable State = Core State + Derived State*
+*Observable State = Core (mutable) State + Derived (read-only) State*
 
 ## Derivations, Actions, and Reactions
 
-...
+### Deverivations
+- `computed`s can have a setter which can then explicitly update its observeables in one shot (automatically wraped in an `action`
+
+### Actions
+- An `@action` function, under the hood, is wrapped by low-level `untracked()` and `transaction()` calls
+  - `untracked()` - prevents tracking of `observable`-`observer` relationships inside mutating function
+  - `transaction()` - batches, coerces notifications on same `observable`, and dispatches minimal notification set at `action` end
+  - `action = untracked(transaction(allowStateChanges(true, <mutating-function>)));`
+  - nested actions ensure notifications only go out after outermost action execution completes
+
+
+
+_______
+Questions:
+- for `autorun` how is MobX parsing/reading/tracking observables inside the function so it can then determine a change and reexecute the fn?
+- what explicitly happens when an object is wrapped via `@observable`?
