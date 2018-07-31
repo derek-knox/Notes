@@ -100,7 +100,8 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   - `transaction()` - batches, coerces notifications on same `observable`, and dispatches minimal notification set at `action` end
   - `action = untracked(transaction(allowStateChanges(true, <mutating-function>)));`
   - nested actions ensure notifications only go out after outermost action execution completes
-
+- the `runInAction()` utility ensures `async`/`await` accounts for `observable` mutations properly
+- the `flow()` utility is useful if multiple `await`s become a PIA
 
 
 _______
