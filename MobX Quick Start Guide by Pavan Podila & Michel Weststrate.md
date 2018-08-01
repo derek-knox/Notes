@@ -125,7 +125,7 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - MobX `observable`s track their observed status via:
   - `onBecomeObserved` and `onBecomeUnobserved` APIs
   - These APIs are great for external use for expensive set up and tear down of an `observable`s initial value
-- MobX doesn't update an `observable` value instantly when mutated, it instead uses an internal `intercept()` API to keep, modify, or discard the proposed mutation. The proposed mutation (change argument) has four properties:
+- MobX doesn't update an `observable` value instantly when mutated, it instead uses an internal `intercept()` API to keep, modify, or discard the proposed mutation. The proposed mutation (change argument object) has four properties:
   1. `type` - Either add, delete, or update
   2. `object` - The object *on which the change happened*
   3. `newValue` - Proposed new value (when `type` is add or update)
