@@ -132,4 +132,4 @@ Questions:
   - "...autorun() implicitly selects all observables in its effect-function" - How?
     - Guessing the fn passed (since it's an object) is iterated over and due to the wrapping `observable` or `computed` fn it is flagged as such and as a result the tracking algorithm has its hook
 - what explicitly happens when an object is wrapped via `@observable`? (custom get/set I believe)
-- In *Watching the Events Go By* there's "                                                                                                                                                                   "
+- In *Watching the Events Go By* there's a comment about how a dev can tap into MobX's internal event system to fine-tune expensive or otherwise control specific observables. Any concrete example of when this is useful?
