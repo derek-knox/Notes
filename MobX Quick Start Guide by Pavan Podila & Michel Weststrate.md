@@ -122,8 +122,9 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
   
 ## Special API for Special Cases
 
-...
-  
+- MobX `observable`s track their observed status via:
+  - `onBecomeObserved`
+  - `onBecomeUnobserved`
   
   
 _______
