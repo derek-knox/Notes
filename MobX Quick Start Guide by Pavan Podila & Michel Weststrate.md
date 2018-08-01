@@ -130,4 +130,5 @@ _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
   - "...autorun() implicitly selects all observables in its effect-function" - How?
+    - Guessing the fn passed (since it's an object) is iterated over and due to the wrapping `observable` or `computed` fn it is flagged as such and as a result the tracking algorithm has its hook
 - what explicitly happens when an object is wrapped via `@observable`? (custom get/set I believe)
