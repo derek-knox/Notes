@@ -92,7 +92,7 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 ## Derivations, Actions, and Reactions
 
 ### Deverivations
-- `computed`s can have a setter which can then explicitly update its observeables in one shot (automatically wraped in an `action`
+- `computed`s can have a setter which can then explicitly update its observables in one shot (automatically wraped in an `action`
 
 ### Actions
 - An `@action` function, under the hood, is wrapped by low-level `untracked()` and `transaction()` calls
