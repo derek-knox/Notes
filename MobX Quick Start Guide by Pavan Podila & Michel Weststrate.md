@@ -142,7 +142,13 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - the `queueProcessor()` allows an operation to automatically be performed on each element addition to an array
 
 `mobx-state-tree`
-
+- `mobx-state-tree` enforces typed `observable` models, enforces mutations in `action`s, and resultingly enables middleware features like logging, time traveling, undo/redo, database sync, etc out-of-the-box. MST introduces strict structure for clearly defining state (`observable's`), mutations (`action`s), and derivations (`computed`s).
+```
+const Todo = types
+  .model(/**/)      // observables
+  .actions(/**/)    // actions
+  .views(/**/)      // computeds
+```
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
