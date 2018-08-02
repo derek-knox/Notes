@@ -124,13 +124,16 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 
 - MobX `observable`s track their observed status via:
   - `onBecomeObserved` and `onBecomeUnobserved` APIs
-  - These APIs are great for external use for expensive set up and tear down of an `observable`s initial value
+  - These APIs are great for external use when an `observable`s initial value has expensive set-up or tear-down
 - MobX doesn't update an `observable` value instantly when mutated, it instead uses an internal `intercept()` API to keep, modify, or discard the proposed mutation. The proposed mutation (change argument object) has four properties:
   1. `type` - Either add, delete, or update
   2. `object` - The object *on which the change happened*
   3. `newValue` - Proposed new value (when `type` is add or update)
   4. `oldValue` - Previous value (when `type` is delete or update)
-  
+- MobX's `observe()` API is the counterpart to `intercept()`
+- MobX's `trace()` API allows you to learn why a computed property, reaction, or component render is being invoked
+
+## Exploring `mobx-utils` and `mobx-state-tree`
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
