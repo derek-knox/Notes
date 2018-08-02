@@ -134,6 +134,15 @@ Actions provide declarative names (function names decorated w/`@action`) to the 
 - MobX's `trace()` API allows you to learn why a computed property, reaction, or component render is being invoked
 
 ## Exploring `mobx-utils` and `mobx-state-tree`
+`mobx-utils`
+- the `fromPromise()` API which returns a MobX aware and decorated promise has a `case()` API that makes conditional pending/fulfilled/rejected React `render()` calls more readable
+- the `lazyObservable()` API defers expensive operations until needed
+- the `now()` API which treats *time* as an `observable` that updates at the given interval (1000ms default)
+- the `createViewModel()` API is ideal for creating a cloned model for editing where form submission confirms the cloned model changes should be reflected in the root model (easy undo for a group of property edits). This allows you to treat the entire editing process as a single transaction.
+- the `queueProcessor()` allows an operation to automatically be performed on each element addition to an array
+
+`mobx-state-tree`
+
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
