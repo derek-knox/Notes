@@ -226,6 +226,10 @@ class ObservableValue extends Atom {
   observe(listener, fireImmediately){}
 }
 ```
+  - the inherited `reportObserved()` and `reportChanged()` enable participation of the reactivity system
+  - the `intercept()` and `observed()` act as *event emmitters* and aren't affected by transactions so they fire immediately vs being batched
+  - `ObservableBox`, `ObservableObject`, `ObservableArray`, and `ObservableMap` extend `ObservableValue`
+    - `ObservableBox` just returns the actual `ObservableValue` :)
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
