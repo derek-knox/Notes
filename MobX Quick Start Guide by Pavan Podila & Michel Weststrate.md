@@ -154,6 +154,10 @@ const Todo = types
 - the `types.maybe()` API for defining an `observable` property type provides the type (`type.string` for example) with built-in runtime type-safety for validating input. Setting a model's value explicitly as opposed to the `type.xxx` type provides that value as the default if non is set during instantiation.
 - stores are *higher-order types*
   - a recommended approach for starting out is to encode the server-fed JSON in MST models and then to *fatten* the model by applying more rigid typing, attaching actions, and attaching views
+- Some domain models are bi-directional or associative and are less condusive to a tree structure, MST accounts for this via:
+  - foreign key pattern (database unique key)
+  - the `getRoot` API in combination with the fact that each MST node knows its own location in the tree allows navigating to the proper model in the tree when referencing another model by the foreign key pattern
+  - think of the MST tree as a *file system for state*
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
