@@ -244,9 +244,10 @@ class ComputedValue {
   
   observe(listener, fireImmediately){}
 }
+```
 - the *value computation* for a `ComputedValue` is called a derivation (aka side effect of a computation)
 - `ComputedValue` is the only node in the dependency tree this is both an `Observable` and `Observer`
-```
+
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
