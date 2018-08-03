@@ -27,7 +27,7 @@ The MobX Triad = `observable`s, `action`s, and reactions
   - `observable map` - useful for tracking dynamically added/removed properties
   - `observable.box()` - convert primitive values into an observable
   
-Observable types (`observable()` is shorthand and automatically using the below APIs):
+Observable types (`observable()` is shorthand and automatically uses the below APIs):
 - objects: `observable.object({})`
 - arrays: `observable.array([])`
   - use `toJS()` for actual JavaScript array to use with non-MobX APIs/libs
