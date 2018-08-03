@@ -299,7 +299,8 @@ These MobX collections (objects, arrays, and maps) are simply collections of `Ob
 *Programming* - value oriented programming (VOP) is concernced with value change, dependencies, and propagation so you can focus on the *what* not the *how* which is counter to event oriented programming (EOP) that's concernced with event streams for change notification (reporting what happened but lacking dependency knowledge)
   - MobX's VOP relies on events internally and abstracts this otherwise explicit event wiring and notification in favor of the declarative `Observable` and `Observer` APIs for establishing connections
 _______
-Questions:
+
+TODO Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
   - "...autorun() implicitly selects all observables in its effect-function" - How?
     - Guessing the fn passed (since it's an object) is iterated over and due to the wrapping `observable` or `computed` fn it is flagged as such and as a result the tracking algorithm has its hook
