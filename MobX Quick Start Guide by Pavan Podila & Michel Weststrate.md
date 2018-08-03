@@ -248,7 +248,49 @@ class ComputedValue {
 ```
 - the *value computation* for a `ComputedValue` is called a derivation (aka side effect of a computation)
 - `ComputedValue` is the only node in the dependency tree this is both an `Observable` and `Observer`
+- `ComputedValue` optimizations
+  - Only computed if more than one `Observer`
+  - Once computed, the value is cached
+  - Only a dependent `Observable`'s `reportChanged()` causes a re-computation
+  - The value can be dependent on other `ComputedValue`s and so no computation occurs unless its immediate dependent children have changed
+  
+### Derivations
+- `Observable`s (`ObservableValue` & `ComputedValue`) are the yin and reactions are the yang
+- derivation and reaction are used interchangably and this is where tracking happens, they are *side effects*:
+  - derivation = new value as side effect
+  - reaction = new computation as side effect
+- MobX uses a `globalState` to keep reference of the currently executing derivation or reaction
+  - When a reaction runs:
+    - all `Observable`s that fire `reportObserved()` are tagged to this reaction
+    - Each `Observable` also tracks all its `Observer`s (reactions)
+- `Action`s create transaction boundaries so all change notifications are only fired after completion. They can be nested too where only when the top most `Action` (transaction) completes do the tracked change notifications actually propagate (aka a batch)
+  - Batch Steps
+    - queued up reactions execute
+    - cycle begins
+    - tracked `Observable`s link (tagged) with executing derivation
+    - add any newly discovered `Observable`s
+    - queue any new reactions found during batch
+    - if no batches, MobX determines the state stable, otherwise the cycle restarts
+- reactions *pull values* from state and fire up the reactive process
 
+### API Layer
+`ObservableObject`
+  - key-value pair backed by an `ObservableValue`
+  - every computed propery is backed by a `ComputedValue`
+  - its `keys()` method is backed by an `Atom` (useful when reaction needs to iterate) and when read results in `reportObserved()`
+  - an added or removed key of `keys()` results in the `Atom`'s `reportChanged()` so connected reactions re-execute
+`ObservableArray`
+  - each indexed value is backed by `ObservableValue`
+  - `length` property is backed by an `Atom` where reads and writes of `length` result in `reportObserved` and `reportChanged` respectively on the `Atom`
+  - for Array read APIs like `map`, `reduce`, `filter`, etc. run the backing `Atom`'s `reportObserved()` executes
+  - for Array write APIs like `splice`, `push`, `pop`, `shift`, etc run the backing `Atom`'s `reportChanged()` executes so connected reactions re-execute
+`ObservableMap`
+  - key-value pair backed by an `ObservableValue`
+  - like `ObservableObject` it has an `Atom` for its `keys()` and when read results in `reportObserved()`
+  - an added or removed key of `keys()` results in the `Atom`'s `reportChanged()` so connected reactions re-execute
+  
+These MobX collections (objects, arrays, and maps) are simply collections of `Observable` boxes (`ObservableValue`) organized as the data structure requires
+  - these data structures naturally expose `intercept()` and `observe()` for more granular use
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
