@@ -179,7 +179,7 @@ MobX in layers (each built upon the previous):
     - Built on top of `ObservableValue` and represent properties and values
     - API layer of MobX
     
-`Atom`
+### `Atom`
 - At runtime MobX creates a backing dependency tree where each node is an `Atom`
 - Two purposes:
   1. Notify when *read* (via `reportObserved()`)
