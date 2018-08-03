@@ -193,7 +193,7 @@ class Atom {
   /* ... among other housekeeping properties ... */
 }
 ```
-- `myObservable[$mobx].values.get('someProperty')` accesses the `observable` property's backing `Atom` but `getAtom()` is a better API
+- `myObservable[$mobx].values.get('someProperty')` accesses the `observable` property's backing `Atom` but `getAtom(observableThing, observableThingProperty)` is a better API
 - Though rare, the `createAtom(name, onBecomeObserved, onBecomeUnobserved)` API may be of use but is used internally in MobX
 - `Atom` becomes active in the reactive system due to an internal:
   - `autorun` ->
