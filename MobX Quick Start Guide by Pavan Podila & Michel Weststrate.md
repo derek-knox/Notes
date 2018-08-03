@@ -167,7 +167,7 @@ MST out-of-the-box features
 
 ## MobX Internals
 
-MobX in layers (each built upon the previous):
+MobX is architected in three layers (each built upon the previous):
   1. `Atom`s
       - atomic unit of the observable dependency tree
       - keeps track of its observers but not the value itself
