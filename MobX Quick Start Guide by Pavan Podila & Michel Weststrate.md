@@ -178,6 +178,10 @@ MobX is architected in three layers (each built upon the previous):
   1. `Observable`{`Object`, `Array`, `Map`} and APIs
       - Built on top of `ObservableValue` and represent properties and values
       - API layer of MobX
+      
+`ObservableValue` = `Observable` only
+`Reaction` = `Observer` only
+`ComputedValue` = Both `Observable` and `Observer`
     
 ### `Atom`
 - At runtime MobX creates a backing dependency tree where each node is an `Atom`
@@ -230,6 +234,19 @@ class ObservableValue extends Atom {
   - the `intercept()` and `observed()` act as *event emmitters* and aren't affected by transactions so they fire immediately vs being batched
   - `ObservableBox`, `ObservableObject`, `ObservableArray`, and `ObservableMap` extend `ObservableValue`
     - `ObservableBox` just returns the actual `ObservableValue` :)
+    
+### `ComputedValue`
+- Does not subclass `Atom` but is similar to `ObservableValue` excluding the `intercept()` ability
+```
+class ComputedValue {
+  get() { /* ... */ reportObserved(this); /* ... */ }
+  set(value) { /* ... rarely used ... */ }
+  
+  observe(listener, fireImmediately){}
+}
+- the *value computation* for a `ComputedValue` is called a derivation (aka side effect of a computation)
+- `ComputedValue` is the only node in the dependency tree this is both an `Observable` and `Observer`
+```
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
