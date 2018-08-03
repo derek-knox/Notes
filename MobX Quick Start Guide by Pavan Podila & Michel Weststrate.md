@@ -303,13 +303,13 @@ These MobX collections (objects, arrays, and maps) are simply collections of `Ob
 
 ## Conclusion/Summary Notes:
 MobX is a state management library that kicks ass for three core reasons:
-    1. MobX abstracts away the otherwise explicit eventing and observing of changes in an app's runtime lifecycle
-    1. Deep internal understanding of the state-tree enables selective and efficient UI re-renders
-    1. minimal API so it is simple to understand, memorize, and implement
+  1. MobX abstracts away the otherwise explicit eventing and observing of changes in an app's runtime lifecycle
+  1. Deep internal understanding of the state-tree enables selective and efficient UI re-renders
+  1. minimal API so it is simple to understand, memorize, and implement
 
 Two mental models that MobX promotes are:
-    1. An app's UI is a function of its state (`UI = fn(state)`, functional programmers rejoice)
-    1. Core state should be minimal, you're encouraged to think in terms of derived state (which MobX can further optimize)
+  1. An app's UI is a function of its state (`UI = fn(state)`, functional programmers rejoice)
+  1. Core state should be minimal, you're encouraged to think in terms of derived state (which MobX can further optimize)
     
 All this means that you can use a tiny API in conjunction with traditional mutations and callbacks to automatically wire up efficient change tracking and subsequent observervable side-effects (like snappy UI updates).
 
