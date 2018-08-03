@@ -209,6 +209,23 @@ class Atom {
   - `atomInstance.reportUnobserved()` ->
   - `atomInstance.onBecomeUnobserved()` ->
   - passed in unobserve callback executes
+  
+### `ObservableValue`
+- Extends `Atom` but also:
+  - stores the `observable` value
+  - provides hooks for intercepting a value change
+  - provides hooks for observing the value
+```
+class ObservableValue extends Atom {
+  value;
+  
+  get() { /**/ this.reportObserved(); }
+  set(value) { /* Interceptor passthrough */ this.value = value; this.reportChanged(); }
+  
+  intercept(handler){}
+  observe(listener, fireImmediately){}
+}
+```
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
