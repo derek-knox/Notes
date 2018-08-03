@@ -152,6 +152,8 @@ const Todo = types
   .views(/**/)      // computeds
 ```
 - the `types.maybe()` API for defining an `observable` property type provides the type (`type.string` for example) with built-in runtime type-safety for validating input. Setting a model's value explicitly as opposed to the `type.xxx` type provides that value as the default if non is set during instantiation.
+- stores are *higher-order types*
+  - a recommended approach for starting out is to encode the server-fed JSON in MST models and then to *fatten* the model by applying more rigid typing, attaching actions, and attaching views
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
