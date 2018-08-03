@@ -208,7 +208,7 @@ class Atom {
   - `disposer` function of `autorun` reaction executes ->
   - `atomInstance.reportUnobserved()` ->
   - `atomInstance.onBecomeUnobserved()` ->
-  - passed in unobserve callback executes
+  - passed in unobserve callback executes (external to MobX clean-up hook)
   
 ### `ObservableValue`
 - Extends `Atom` but also:
