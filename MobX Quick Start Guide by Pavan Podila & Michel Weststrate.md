@@ -178,10 +178,11 @@ MobX is architected in three layers (each built upon the previous):
   1. `Observable`{`Object`, `Array`, `Map`} and APIs
       - Built on top of `ObservableValue` and represent properties and values
       - API layer of MobX
-      
-`ObservableValue` = `Observable` only
-`Reaction` = `Observer` only
-`ComputedValue` = Both `Observable` and `Observer`
+
+`Observable` vs `Observer`
+- `ObservableValue` = `Observable` only
+- `Reaction` = `Observer` only
+- `ComputedValue` = Both `Observable` and `Observer`
     
 ### `Atom`
 - At runtime MobX creates a backing dependency tree where each node is an `Atom`
