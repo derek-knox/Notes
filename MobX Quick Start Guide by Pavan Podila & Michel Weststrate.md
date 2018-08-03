@@ -200,7 +200,7 @@ class Atom {
   - `atomInstance.get()` ->
   - `atomInstance.reportObserved()` and returns value for `get()` ->
   - `atomInstance.onBecomeObserved()` ->
-  - passed in observe callback executes ->
+  - passed in observe callback from `Atom` instance instantiation executes ->
   - something happens resulting in `atomInstance.reportChanged()` ->
   - changed value propogates value to all `observers` ->
   - function passed to `autorun` re-executes
