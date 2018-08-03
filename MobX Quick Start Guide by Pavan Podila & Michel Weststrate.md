@@ -219,7 +219,7 @@ class Atom {
 class ObservableValue extends Atom {
   value;
   
-  get() { /**/ this.reportObserved(); }
+  get() { /* ... */ this.reportObserved(); }
   set(value) { /* Interceptor passthrough */ this.value = value; this.reportChanged(); }
   
   intercept(handler){}
