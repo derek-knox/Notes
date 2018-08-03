@@ -164,6 +164,51 @@ MST out-of-the-box features
 - Snapshots - are immutable versions of the state-tree in memory retrievable via the `getSnapshot()` API. This makes quickly serializing a breeze. Since each MST node is a state-tree itself, serializing subtrees is just as easy. Combined with the  `applySnapshot()` API, MST allows easy time-traveling and wholistic or granular undo/redo
 - Patches - are efficient snapshots for real-time changes and frequent server-client communication. They're used via `onPatch` and `applyPatch`.
 - Logging and authentication are other features availabe as MST's strict `action` use guarentees middleware (logging, authenticating, time-travel, and undo/redo) is possible. Check `mst-middlewares` package.
+
+## MobX Internals
+
+MobX in layers (each built upon the previous):
+  1. `Atom`s
+    - atomic unit of the observable dependency tree
+    - keeps track of its observers but not the value itself
+  1. `ObservableValue`, `ComputedValue`, and Devivations
+    - `ObservableValue` extends `Atom` and provides value storage (and core implementation of boxed `Observable`s)
+    - Derivations and Reactions are the *observers* of `Atom`s. They respond to `Atom` changes and schedule reactions.
+    - `ComputedValue` builds on the derivations and acts as an `Observable`
+  1. `Observable`{`Object`, `Array`, `Map`} and APIs
+    - Built on top of `ObservableValue` and represent properties and values
+    - API layer of MobX
+    
+`Atom`
+- At runtime MobX creates a backing dependency tree where each node is an `Atom`
+- Two purposes:
+  1. Notify when *read* (via `reportObserved()`)
+  1. Notify when *changed* (via `reportChanged()`)
+- Tracks its observers
+```
+class Atom {
+  observers = [];
+  reportObserved(){}
+  reportChanged(){}
+  /* ... among other housekeeping properties ... */
+}
+```
+- `myObservable[$mobx].values.get('someProperty')` accesses the `observable` property's backing `Atom` but `getAtom()` is a better API
+- Though rare, the `createAtom(name, onBecomeObserved, onBecomeUnobserved)` API may be of use but is used internally in MobX
+- `Atom` becomes active in the reactive system due to an internal:
+  - `autorun` ->
+  - `atomInstance.get()` ->
+  - `atomInstance.reportObserved()` and returns value for `get()` ->
+  - `atomInstance.onBecomeObserved()` ->
+  - passed in observe callback executes ->
+  - something happens resulting in `atomInstance.reportChanged()` ->
+  - changed value propogates value to all `observers` ->
+  - function passed to `autorun` re-executes
+- `Atom` becomes inactive in the reactive system due to an internal:
+  - `disposer` function of `autorun` reaction executes ->
+  - `atomInstance.reportUnobserved()` ->
+  - `atomInstance.onBecomeUnobserved()` ->
+  - passed in unobserve callback executes
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
