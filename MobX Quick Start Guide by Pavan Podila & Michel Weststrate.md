@@ -293,10 +293,10 @@ These MobX collections (objects, arrays, and maps) are simply collections of `Ob
   - these data structures naturally expose `intercept()` and `observe()` for more granular use
   
 ### Transparent Functional Reactive Programming
-*Transparent* - declarative syntax for connecting `Observer`s to `Observable`s with no explicit wiring in favor of the decorator syntax or its `observable()` function equivalent. This enables the autonomous functioning of the reactive system as the usage of an `Observable` inside a reaction (`Observer`) is enough for automatic wiring.
-*Functional* - leverages the power of functional programming by applying transformations to input data as output data where transformations are automatically applied due to the implicit `Observable` and `Observer` connections
-*Reactive* - the complexity of wiring and efficiency is handled by MobX's internal state tree management, optimizations, and deep knowledge of dependencies so reactions occur only when needed (no polling or excessive eventing)
-*Programming* - value oriented programming (VOP) is concernced with value change, dependencies, and propagation so you can focus on the *what* not the *how* which is counter to event oriented programming (EOP) that's concernced with event streams for change notification (reporting what happened but lacking dependency knowledge)
+- *Transparent* - declarative syntax for connecting `Observer`s to `Observable`s with no explicit wiring in favor of the decorator syntax or its `observable()` function equivalent. This enables the autonomous functioning of the reactive system as the usage of an `Observable` inside a reaction (`Observer`) is enough for automatic wiring.
+- *Functional* - leverages the power of functional programming by applying transformations to input data as output data where transformations are automatically applied due to the implicit `Observable` and `Observer` connections
+- *Reactive* - the complexity of wiring and efficiency is handled by MobX's internal state tree management, optimizations, and deep knowledge of dependencies so reactions occur only when needed (no polling or excessive eventing)
+- *Programming* - value oriented programming (VOP) is concernced with value change, dependencies, and propagation so you can focus on the *what* not the *how* which is counter to event oriented programming (EOP) that's concernced with event streams for change notification (reporting what happened but lacking dependency knowledge)
   - MobX's VOP relies on events internally and abstracts this otherwise explicit event wiring and notification in favor of the declarative `Observable` and `Observer` APIs for establishing connections
 _______
 
