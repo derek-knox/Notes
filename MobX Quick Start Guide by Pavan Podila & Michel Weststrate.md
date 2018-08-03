@@ -298,7 +298,22 @@ These MobX collections (objects, arrays, and maps) are simply collections of `Ob
 - *Reactive* - the complexity of wiring and efficiency is handled by MobX's internal state tree management, optimizations, and deep knowledge of dependencies so reactions occur only when needed (no polling or excessive eventing)
 - *Programming* - value oriented programming (VOP) is concernced with value change, dependencies, and propagation so you can focus on the *what* not the *how* which is counter to event oriented programming (EOP) that's concernced with event streams for change notification (reporting what happened but lacking dependency knowledge)
   - MobX's VOP relies on events internally and abstracts this otherwise explicit event wiring and notification in favor of the declarative `Observable` and `Observer` APIs for establishing connections
-_______
+
+---
+
+## Conclusion/Summary Notes:
+MobX is a state management library that kicks ass for three core reasons:
+    1. MobX abstracts away the otherwise explicit eventing and observing of changes in an app's runtime lifecycle
+    1. Deep internal understanding of the state-tree enables selective and efficient UI re-renders
+    1. minimal API so it is simple to understand, memorize, and implement
+
+Two mental models that MobX promotes are:
+    1. An app's UI is a function of its state (`UI = fn(state)`, functional programmers rejoice)
+    1. Core state should be minimal, you're encouraged to think in terms of derived state (which MobX can further optimize)
+    
+All this means that you can use a tiny API in conjunction with traditional mutations and callbacks to automatically wire up efficient change tracking and subsequent observervable side-effects (like snappy UI updates).
+
+---
 
 TODO Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
