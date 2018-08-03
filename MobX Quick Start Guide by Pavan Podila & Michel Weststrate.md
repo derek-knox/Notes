@@ -202,7 +202,7 @@ class Atom {
   - `atomInstance.onBecomeObserved()` ->
   - passed in observe callback from `Atom` instance instantiation executes ->
   - something happens resulting in `atomInstance.reportChanged()` ->
-  - changed value propogates value to all `observers` ->
+  - changed value propagates value to all `observers` ->
   - function passed to `autorun` re-executes
 - `Atom` becomes inactive in the reactive system due to an internal:
   - `disposer` function of `autorun` reaction executes ->
