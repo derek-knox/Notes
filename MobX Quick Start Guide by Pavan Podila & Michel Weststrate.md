@@ -158,6 +158,12 @@ const Todo = types
   - foreign key pattern (database unique key)
   - the `getRoot` API in combination with the fact that each MST node knows its own location in the tree allows navigating to the proper model in the tree when referencing another model by the foreign key pattern
   - think of the MST tree as a *file system for state*
+  - `types.identifier()` is a built-in API for this foreign key pattern in MST
+  
+MST out-of-the-box features
+- Snapshots - are immutable versions of the state-tree in memory retrievable via the `getSnapshot()` API. This makes quickly serializing a breeze. Since each MST node is a state-tree itself, serializing subtrees is just as easy. Combined with the  `applySnapshot()` API, MST allows easy time-traveling and wholistic or granular undo/redo
+- Patches - are efficient snapshots for real-time changes and frequent server-client communication. They're used via `onPatch` and `applyPatch`.
+- Logging and authentication are other features availabe as MST's strict `action` use guarentees middleware (logging, authenticating, time-travel, and undo/redo) is possible. Check `mst-middlewares` package.
 _______
 Questions:
 - How is MobX parsing/reading/tracking observables inside `autorun`'s/`reaction()`'s/`when()`'s *tracking-function*?
