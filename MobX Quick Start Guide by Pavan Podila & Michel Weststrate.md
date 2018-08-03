@@ -169,15 +169,15 @@ MST out-of-the-box features
 
 MobX in layers (each built upon the previous):
   1. `Atom`s
-    - atomic unit of the observable dependency tree
-    - keeps track of its observers but not the value itself
+      - atomic unit of the observable dependency tree
+      - keeps track of its observers but not the value itself
   1. `ObservableValue`, `ComputedValue`, and Devivations
-    - `ObservableValue` extends `Atom` and provides value storage (and core implementation of boxed `Observable`s)
-    - Derivations and Reactions are the *observers* of `Atom`s. They respond to `Atom` changes and schedule reactions.
-    - `ComputedValue` builds on the derivations and acts as an `Observable`
+      - `ObservableValue` extends `Atom` and provides value storage (and core implementation of boxed `Observable`s)
+      - Derivations and Reactions are the *observers* of `Atom`s. They respond to `Atom` changes and schedule reactions.
+      - `ComputedValue` builds on the derivations and acts as an `Observable`
   1. `Observable`{`Object`, `Array`, `Map`} and APIs
-    - Built on top of `ObservableValue` and represent properties and values
-    - API layer of MobX
+      - Built on top of `ObservableValue` and represent properties and values
+      - API layer of MobX
     
 ### `Atom`
 - At runtime MobX creates a backing dependency tree where each node is an `Atom`
