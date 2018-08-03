@@ -24,7 +24,7 @@ The MobX Triad = `observable`s, `action`s, and reactions
 
 ### Observables
 `Observable` objects only track the properties provided in the initial value given. You need to use *observable maps* for dynamic property tracking. Additionally, tracking JavaScript primitives require *box*ing though explicitly doing so is rare.
-  - `observable map` - 
+  - `observable map` - useful for tracking dynamically added/removed properties
   - `observable.box()` - convert primitive values into an observable
   
 Observable types (`observable()` is shorthand and automatically using the below APIs):
