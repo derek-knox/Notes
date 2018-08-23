@@ -333,6 +333,7 @@ All this means that you can use a tiny API in conjunction with traditional mutat
     }
     ...
     ```
-1. C# version? What would need to be ported to make the most minimal implementation work in Unity? 
+1. C# version? What would need to be ported to make the most minimal implementation work in Unity?
+    - Atom, Observable, Reaction, Action (more?)
     - Thinking solely in the context or 2+ GameObjects each observing a store value (DataManager) where any store value change is automatically reflected in each GameObject. Maybe a first class hook into `Update()`? Custom `ObservableUpdate`?
 1. In *Watching the Events Go By* there's a comment about how a dev can tap into MobX's internal event system to fine-tune expensive or otherwise control specific observables. Any common concrete examples of when this is useful?
