@@ -321,7 +321,7 @@ All this means that you can use a tiny API in conjunction with traditional mutat
     - Guessing the fn passed (since it's an object) is iterated over and due to the wrapping `observable` or `computed` fn it is flagged as such and as a result the tracking algorithm has its hook
 - what explicitly happens when an object is wrapped via `@observable`? (custom get/set I believe)
 - Any specific checklist or notes regarding "dereferencing" for ensuring `render()` calls? I read this book after making Reticle Designer and I ran into a few times where I was perplexed as to why a render update wasn't being registered.
-- The solution below works, but I was really trying to focus on `computed`/derivations and I feel like I'm missing a better (MobXish) way. Ultimately, I felt knowing a change in one or more objects was a *derivation*. Is there a better way to achieve the below?
+- The solution below works, but I was really trying to focus on `computed`/derivations and I feel like I'm missing a better (MobXish) way. Ultimately, I felt that knowing about a change in one or more objects was a *derivation*. Is there a better way to achieve the below?
 ```
 ...
 this.controls.forEach((control) => {
