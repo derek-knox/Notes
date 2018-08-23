@@ -322,17 +322,17 @@ All this means that you can use a tiny API in conjunction with traditional mutat
 1. What explicitly happens when an object is wrapped via `@observable`? (custom get/set I believe)
 1. Any specific checklist or notes regarding "dereferencing" for ensuring `render()` calls? I read this book after making Reticle Designer and I ran into a few times where I was perplexed as to why a render update wasn't being registered.
 1. The solution below works, but I was really trying to focus on `computed`/derivations and I feel like I'm missing a better (MobXish) way. Ultimately, I felt that knowing about a change in one or more objects was a *derivation*. Is there a better way to achieve the below?
-```
-...
-this.controls.forEach((control) => {
-  observe(control.settings, (change) => this.onSettingsChange({ control, change }));
-});
-...
-@action.bound onSettingsChange(payload) {
-  this.updateControlInFocus(payload.control);
-}
-...
-```
+    ```
+    ...
+    this.controls.forEach((control) => {
+      observe(control.settings, (change) => this.onSettingsChange({ control, change }));
+    });
+    ...
+    @action.bound onSettingsChange(payload) {
+      this.updateControlInFocus(payload.control);
+    }
+    ...
+    ```
 1. C# version? What would need to be ported to make the most minimal implementation work in Unity? 
     - Thinking solely in the context or 2+ GameObjects each observing a store value (DataManager) where any store value change is automatically reflected in each GameObject. Maybe a first class hook into `Update()`? Custom `ObservableUpdate`?
 1. In *Watching the Events Go By* there's a comment about how a dev can tap into MobX's internal event system to fine-tune expensive or otherwise control specific observables. Any common concrete examples of when this is useful?
