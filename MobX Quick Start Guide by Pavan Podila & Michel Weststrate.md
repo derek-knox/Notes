@@ -171,7 +171,7 @@ MobX is architected in three layers (each built upon the previous):
   1. `Atom`s
       - atomic unit of the observable dependency tree
       - keeps track of its observers but not the value itself
-  1. `ObservableValue`, `ComputedValue`, and Devivations
+  1. `ObservableValue`, `ComputedValue`, and Derivations
       - `ObservableValue` extends `Atom` and provides value storage (and core implementation of boxed `Observable`s)
       - Derivations and Reactions are the *observers* of `Atom`s. They respond to `Atom` changes and schedule reactions.
       - `ComputedValue` builds on the derivations and acts as an `Observable`
